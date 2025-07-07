@@ -14,44 +14,34 @@ const Phone = () => {
     // Ensure refs are available
     if (!sectionRef.current || !imageRef.current) return;
 
-    const ctx = gsap.context(() => {
-      // Pin the entire section (image + text)
-      ScrollTrigger.create({
-        trigger: sectionRef.current,
-        start: "top top",
-        end: "+=200%", // control how long it pins
-        pin: true,
-        scrub: true,
-        onRefresh: () => {
-          // Refresh calculations if needed
-          ScrollTrigger.refresh();
-        },
-      });
+    const element = sectionRef.current;
+    const imageElement = imageRef.current;
 
-      // Scale image on scroll
-      gsap.fromTo(
-        imageRef.current,
+    // Create ScrollTrigger animations
+    const pinTrigger = ScrollTrigger.create({
+      trigger: element,
+      start: "top top",
+      end: "+=200%",
+      pin: true,
+      scrub: true,
+    });
+
+    const scaleTrigger = ScrollTrigger.create({
+      trigger: element,
+      start: "top 60%",
+      end: "+=200%",
+      scrub: true,
+      animation: gsap.fromTo(
+        imageElement,
         { scale: 1 },
-        {
-          scale: 0.5,
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 60%",
-            end: "+=200%",
-            scrub: true,
-          },
-        }
-      );
-    }, sectionRef);
+        { scale: 0.5, duration: 1 }
+      ),
+    });
 
+    // Cleanup function
     return () => {
-      // Proper cleanup
-      ctx.revert();
-      ScrollTrigger.getAll().forEach((trigger) => {
-        if (trigger.trigger === sectionRef.current) {
-          trigger.kill();
-        }
-      });
+      pinTrigger.kill();
+      scaleTrigger.kill();
     };
   }, []);
 
@@ -67,7 +57,7 @@ const Phone = () => {
               width={600}
               height={800}
               className="z-10"
-              priority // Add priority for better loading
+              priority
             />
           </div>
         </div>
