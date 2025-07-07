@@ -25,6 +25,7 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center justify-around gap-12">
+          <Link href="/about-us">About</Link>
           <Link href="/services">Services</Link>
           <Link href="/blogs">Blogs</Link>
           <Link href="/ai">TARA</Link>
@@ -62,6 +63,9 @@ const Navbar = () => {
         }}
       >
         <div className="p-2 flex flex-col gap-3 mt-3 md:hidden">
+          <Link href="/about-us" onClick={() => setMenuOpen(false)}>
+            About
+          </Link>
           <Link href="/services" onClick={() => setMenuOpen(false)}>
             Services
           </Link>

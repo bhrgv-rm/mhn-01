@@ -119,7 +119,7 @@ const Footer = () => {
           </div>
         </nav>
       </div>
-      <p className="text-xs text-gray-600 mt-6">
+      <p className="text-xs text-gray-600 mt-4">
         © {new Date().getFullYear()} My Health Notion. All rights reserved.
       </p>
     </footer>
