@@ -58,7 +58,7 @@ const page = () => {
         </div>
         <div className="media base-frame relative rounded-2xl bg-green-200 bg-opacity-10 p-2 base-frame--default section-media">
           <img
-            src="careers.png"
+            src="team.png"
             alt="Careers at My Health Notion"
             className="w-full h-auto rounded-lg"
           />

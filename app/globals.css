@@ -25,6 +25,13 @@
   line-height: 1;
 }
 
+@media (width <= 768px) {
+  .hero .main,
+  .heading {
+    font-size: clamp(2rem, 0.75rem + 4vw, 3rem);
+    line-height: 1;
+  }
+}
 .word {
   opacity: 0; /* Start words hidden */
   transition: opacity 0.5s ease-in-out;
@@ -115,7 +122,31 @@ footer .right section {
 }
 .about-one {
   background: url(/careers.png) no-repeat center center;
-  background-size: 100vw auto; /* Makes image fit full width */
-  width: 100vw;
-  height: auto; /* Or set specific height depending on design */
+  background-size: 90vw auto; /* Makes image fit full width */
+  width: 90vw;
+  height: auto;
+  margin-inline: auto;
+}
+
+.blog-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (width <= 768px) {
+  .blog-preview div {
+    flex: 3;
+  }
+  .blog-preview img {
+    flex: 1;
+  }
 }

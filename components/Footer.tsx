@@ -5,6 +5,7 @@ import {
   FacebookLogoIcon,
   YoutubeLogoIcon,
   XLogoIcon,
+  ArrowRightIcon,
 } from "@phosphor-icons/react";
 import Link from "next/link";
 
@@ -12,8 +13,8 @@ const Footer = () => {
   return (
     <footer className="bg-white text-black px-6 py-10 md:px-32 md:py-16">
       <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-24">
-        <section className="flex-1">
-          <div className="flex items-center gap-3 mb-6">
+        <section className="flex-1 flex flex-col gap-6">
+          <div className="flex items-center gap-3">
             <Image src="/logo/default.png" alt="logo" width={40} height={40} />
             <p className="text-2xl font-bold tracking-tight">
               My Health Notion
@@ -23,14 +24,23 @@ const Footer = () => {
           <label htmlFor="footer-email" className="sr-only">
             Email
           </label>
-          <input
-            id="footer-email"
-            type="email"
-            placeholder="Enter your email"
-            className="border-2 border-gray-300 rounded px-4 py-2 w-full max-w-xs mb-4 text-sm"
-          />
+          <div className="relative w-full max-w-xs">
+            <input
+              id="footer-email"
+              type="email"
+              placeholder="Enter your email"
+              className="border-2 border-gray-500 rounded px-4 py-2 w-full pr-10 text-sm"
+            />
+            <button
+              type="submit"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-black"
+              aria-label="Submit email"
+            >
+              <ArrowRightIcon size={20} weight="bold" />
+            </button>
+          </div>
 
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-4">
             <a href="#" aria-label="Instagram">
               <InstagramLogoIcon size={24} />
             </a>
@@ -44,15 +54,11 @@ const Footer = () => {
               <XLogoIcon size={24} />
             </a>
           </div>
-
-          <p className="text-xs text-gray-600 mt-6">
-            © {new Date().getFullYear()} My Health Notion. All rights reserved.
-          </p>
         </section>
 
         {/* Right Section */}
         <nav className="flex flex-1 flex-col sm:flex-row gap-12">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-2">
             <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
               Quick Links
             </h2>
@@ -87,7 +93,7 @@ const Footer = () => {
               FAQs
             </Link>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-2">
             <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
               Legal
             </h2>
@@ -112,6 +118,9 @@ const Footer = () => {
           </div>
         </nav>
       </div>
+      <p className="text-xs text-gray-600 mt-6">
+        © {new Date().getFullYear()} My Health Notion. All rights reserved.
+      </p>
     </footer>
   );
 };

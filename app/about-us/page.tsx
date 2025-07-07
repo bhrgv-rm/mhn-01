@@ -7,9 +7,48 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <section className="about-one flex flex-col items-center justify-center pt-40 pb-44"></section>
+      <section className="about-one md:mt-40 flex flex-col items-center justify-center pt-40 pb-44"></section>
       <section className="max-w-section-default px-4 flex flex-col text-xl gap-4 pt-10 pb-20">
-        <h1 className="heading text-center font-bold tracking-tighter align-center">
+        <h1 className="md:text-6xl text-xl text-center text-balance font-bold tracking-tighter align-center">
+          No more paper files. No more confusion. Hassle free, organized health.
+        </h1>
+
+        <section className="flex gap-4 items-start my-4 max-w-section-default">
+          <div className="text">
+            <p>
+              We get it. Life is busy. You're juggling work, sleep (or the lack
+              of it), mood swings, caffeine, cravings, checkups, and that thing
+              you Googled at 2 AM that made you spiral. That's exactly why we
+              built MyHealthNotion — a place to track it all, understand your
+              patterns, and start taking charge of your health, one tiny (but
+              powerful) insight at a time.
+            </p>
+          </div>
+          <img
+            src="https://myhealthnotion.vercel.app/img/faces/priyanka.svg"
+            width="450px"
+            className="aspect-square object-cover"
+          />
+        </section>
+        <section className="flex gap-4 items-end my-4 max-w-section-default">
+          <img
+            src="https://myhealthnotion.vercel.app/img/faces/vivek.svg"
+            width="450px"
+            className="aspect-square object-cover"
+          />
+          <div className="text">
+            <p>
+              We get it. Life is busy. You're juggling work, sleep (or the lack
+              of it), mood swings, caffeine, cravings, checkups, and that thing
+              you Googled at 2 AM that made you spiral. That's exactly why we
+              built MyHealthNotion — a place to track it all, understand your
+              patterns, and start taking charge of your health, one tiny (but
+              powerful) insight at a time.
+            </p>
+          </div>
+        </section>
+
+        <h1 className="heading text-center text-pretty font-bold tracking-tighter align-center">
           About Us
         </h1>
 
