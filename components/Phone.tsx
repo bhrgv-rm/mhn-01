@@ -11,38 +11,34 @@ const Phone = () => {
   const imageRef = useRef(null);
 
   useEffect(() => {
-    // Ensure refs are available
-    if (!sectionRef.current || !imageRef.current) return;
+    const ctx = gsap.context(() => {
+      // Pin the entire section (image + text)
+      ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: "top top",
+        end: "+=200%", // control how long it pins
+        pin: true,
+        scrub: true,
+        invalidateOnRefresh: true,
+      });
 
-    const element = sectionRef.current;
-    const imageElement = imageRef.current;
-
-    // Create ScrollTrigger animations
-    const pinTrigger = ScrollTrigger.create({
-      trigger: element,
-      start: "top top",
-      end: "+=200%",
-      pin: true,
-      scrub: true,
-    });
-
-    const scaleTrigger = ScrollTrigger.create({
-      trigger: element,
-      start: "top 60%",
-      end: "+=200%",
-      scrub: true,
-      animation: gsap.fromTo(
-        imageElement,
+      // Scale image on scroll
+      gsap.fromTo(
+        imageRef.current,
         { scale: 1 },
-        { scale: 0.5, duration: 1 }
-      ),
-    });
+        {
+          scale: 0.5,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 60%",
+            end: "+=200%",
+            scrub: true,
+          },
+        }
+      );
+    }, sectionRef);
 
-    // Cleanup function
-    return () => {
-      pinTrigger.kill();
-      scaleTrigger.kill();
-    };
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -57,7 +53,6 @@ const Phone = () => {
               width={600}
               height={800}
               className="z-10"
-              priority
             />
           </div>
         </div>
@@ -66,19 +61,19 @@ const Phone = () => {
           <div className="flex w-full max-w-7xl gap-80">
             <div className="flex-1 flex items-center justify-center">
               <h1 className="text-3xl font-bold text-right">
-                Health isn't just about now. It's about what comes next. At My
+                Health isn’t just about now. It’s about what comes next. At My
                 Health Notion, we look at health through a generational lens.
                 The foods we eat, the sleep we skip, the stress we ignore—these
-                aren't isolated habits.
+                aren’t isolated habits.
               </h1>
             </div>
 
             <div className="flex-1 flex items-center justify-center">
               <h1 className="text-3xl font-bold text-left">
-                Health isn't just about now. It's about what comes next. At My
+                Health isn’t just about now. It’s about what comes next. At My
                 Health Notion, we look at health through a generational lens.
                 The foods we eat, the sleep we skip, the stress we ignore—these
-                aren't isolated habits.
+                aren’t isolated habits.
               </h1>
             </div>
           </div>
