@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Pulse from "./Pulse";
 import Link from "next/link";

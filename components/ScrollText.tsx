@@ -1,3 +1,4 @@
+"use clienr";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { SplitText, ScrollTrigger } from "gsap/all";

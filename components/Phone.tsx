@@ -24,7 +24,7 @@ const Phone = () => {
       // Scale image on scroll
       gsap.fromTo(
         imageRef.current,
-        { scale: 1.05 },
+        { scale: 1 },
         {
           scale: 0.5,
           scrollTrigger: {
