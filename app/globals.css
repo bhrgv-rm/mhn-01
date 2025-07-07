@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+::selection {
+  background: #05df729e;
+  color: #020618;
+}
+
+*:focus {
+  outline: none;
+}
+
+.tara-badge {
+  background: #0b9344;
+  color: #ffffff;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #07602c;
+}
+
+.hero .main,
+.heading {
+  font-size: clamp(6.25rem, 2.4038rem + 5.1282vw, 5rem);
+  line-height: 1;
+}
+
+.word {
+  opacity: 0; /* Start words hidden */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.red .word {
+  opacity: 0.2; /* This will be overridden by GSAP animations */
+}
+
+nav.navbar {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.25);
+}
+
+.cta {
+  box-shadow: inset 0 0 4px 1px #ffffff80, 0 4px 4px -4px #00000080,
+    0 0 0 1px #020618;
+}
+.cta-nav {
+  box-shadow: inset 0 0 4px 1px #ffffff80, 0 4px 4px -4px #00000080,
+    0 0 0 1px #020618;
+  margin: 1px;
+  width: calc(100% - 2px);
+}
+img.testimonials-image {
+  box-shadow: 0 0 0 1px white, 0 0 0 2px black, 0 2px 1px 1px black;
+}
+
+/* tailwind.css or global.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+footer .right section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #020618;
+}
+
+.screen-pad {
+  padding: 0 1rem;
+}
+
+.max-w-section-default {
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+.toast {
+  box-shadow: inset 0 0 4px 2px #ffffff80, 0 4px 4px 0px #00000080,
+    0 0 0 2px #05df72;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.1s ease-out forwards, slide-out 0.1s ease-in forwards;
+  animation-delay: 0s, 3s;
+}
