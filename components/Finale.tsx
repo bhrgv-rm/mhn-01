@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 const Finale = () => {
   return (
-    <div className="bg-white text-center text-black flex flex-col items-center justify-center w-[90vw] rounded-lg md:p-16 p-8 mx-auto border shadow-lg">
+    <div className="bg-white text-center text-black flex flex-col items-center justify-center w-[90vw] rounded-xl md:p-16 p-8 mx-auto border shadow-lg">
       <h5 className="uppercase text-md tracking-tight font-semibold md:mb-8 mb-4">
         Download the App
       </h5>

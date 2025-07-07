@@ -13,8 +13,7 @@ interface Props {
 }
 const BlogPreview = ({ title, description, image, date, link }: Props) => {
   return (
-    <div className="blog-preview flex items-stretch justify-between rounded-lg mb-8 w-full relative overflow-hidden">
-      {/* Content: 4/5 width */}
+    <div className="blog-preview flex items-stretch justify-between rounded-xl mb-8 w-full relative overflow-hidden">
       <div className="w-4/5 p-4 flex flex-col justify-between">
         <div>
           <h2 className="blog-title text-xl font-semibold">{title}</h2>
@@ -32,7 +31,7 @@ const BlogPreview = ({ title, description, image, date, link }: Props) => {
           src={image}
           alt={title}
           fill
-          className="object-cover rounded-r-lg"
+          className="object-cover rounded-r-xl"
         />
       </div>
 
