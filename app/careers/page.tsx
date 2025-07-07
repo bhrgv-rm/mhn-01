@@ -58,7 +58,7 @@ const page = () => {
         </div>
         <div className="media base-frame relative rounded-2xl bg-green-200 bg-opacity-10 p-2 base-frame--default section-media">
           <img
-            src="https://n8niostorageaccount.blob.core.windows.net/n8nio-strapi-blobs-prod/assets/n8n_careers_ee6ad4a7be.png"
+            src="careers.png"
             alt="Careers at My Health Notion"
             className="w-full h-auto rounded-lg"
           />

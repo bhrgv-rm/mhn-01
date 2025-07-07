@@ -7,13 +7,11 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center pt-40 pb-44 bg-red-400">
-        <h1 className="heading w-[80vw] text-center font-bold tracking-tighter align-center">
+      <section className="about-one flex flex-col items-center justify-center pt-40 pb-44"></section>
+      <section className="max-w-section-default px-4 flex flex-col text-xl gap-4 pt-10 pb-20">
+        <h1 className="heading text-center font-bold tracking-tighter align-center">
           About Us
         </h1>
-      </section>
-      <section className="max-w-section-default px-4 flex flex-col text-xl gap-4 pt-10 pb-20">
-        <h1>About Us</h1>
 
         <p>Hey, glad you're here.</p>
 

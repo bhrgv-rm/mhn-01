@@ -113,3 +113,9 @@ footer .right section {
   animation: slide-in 0.1s ease-out forwards, slide-out 0.1s ease-in forwards;
   animation-delay: 0s, 3s;
 }
+.about-one {
+  background: url(/careers.png) no-repeat center center;
+  background-size: 100vw auto; /* Makes image fit full width */
+  width: 100vw;
+  height: auto; /* Or set specific height depending on design */
+}
