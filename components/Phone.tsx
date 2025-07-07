@@ -43,7 +43,7 @@ const Phone = () => {
   return (
     <>
       {/* This section gets pinned and animated */}
-      <div ref={sectionRef} className="phone-img relative h-[100vh] z-10">
+      <div ref={sectionRef} className="phone-img relative h-[100vh] mx-2 z-10">
         <div className="h-screen flex justify-center items-center">
           <div ref={imageRef}>
             <Image

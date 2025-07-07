@@ -34,7 +34,7 @@ const ScrollText = () => {
     <div className="w-full min-h-screen flex items-center justify-center">
       <h1
         ref={textRef}
-        className="w-[60%] h-fit mb-[50vh] tracking-tight text-center font-semibold leading-tighter font-medium text-4xl"
+        className="md:w-[60%] w-[90%] h-fit mb-[50vh] tracking-tight text-center font-semibold leading-tighter md:text-4xl text-xl"
       >
         At My Health Notion, we look at health through a generational lens. The
         foods we eat, the sleep we skip, the stress we ignore are not isolated

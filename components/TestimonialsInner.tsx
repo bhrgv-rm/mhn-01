@@ -8,8 +8,8 @@ interface Props {
 
 const Testimonials: React.FC<Props> = ({ name, tag, text, image }) => {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-6 max-w-240">
-      <h1 className="font-semibold tracking-tight leading-[1.3] text-3xl">
+    <div className="flex flex-col items-center justify-center text-center p-6 md:max-w-240 max-w-screen">
+      <h1 className="font-semibold tracking-tight leading-[1.3] md:text-3xl text-sm">
         {text}
       </h1>
       <div className="flex items-center mt-4">

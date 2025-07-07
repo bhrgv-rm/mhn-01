@@ -41,7 +41,7 @@ const EmblaCarousel = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center gap-16 my-48">
+    <div className="flex justify-center items-center md:gap-16 gap-2 my-48 mx-2">
       <button
         type="button"
         onClick={() => emblaApi?.scrollPrev()}
