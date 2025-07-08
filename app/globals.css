@@ -8,7 +8,10 @@
 *:focus {
   outline: none;
 }
-
+body {
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
 .tara-badge {
   background: #0b9344;
   color: #ffffff;
@@ -17,6 +20,12 @@
   font-size: 1rem;
   font-weight: 600;
   border: 2px solid #07602c;
+}
+
+@media (width <= 768px) {
+  .tara-badge {
+    font-size: 0.5rem;
+  }
 }
 
 .hero .main,
@@ -148,5 +157,17 @@ footer .right section {
   }
   .blog-preview img {
     flex: 1;
+  }
+}
+
+.about-list {
+  list-style-type: decimal;
+  li {
+    font-weight: 600;
+    margin-left: 12px;
+    margin-bottom: 10px;
+  }
+  span {
+    font-weight: 400;
   }
 }

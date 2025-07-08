@@ -30,14 +30,14 @@ const Job: React.FC<Props> = ({ title, description, location, icon, url }) => {
   const selectedIcon = iconSet[icon] || <BriefcaseIcon size={24} />;
   return (
     <div className="relative">
-      <div className="job-card p-4 w-full flex gap-1 rounded-md border-2 border-green-400 hover:bg-gray-50">
+      <div className="job-card p-4 w-full flex gap-1 rounded-md border-2 border-lime-400 hover:bg-gray-50">
         <div className="flex flex-col gap-1 w-full">
           <h1 className="text-lg font-semibold flex items-center gap-2">
             {selectedIcon}
             {title}
           </h1>
           <p className="leading-snug">{description}</p>
-          <p className="text-sm bg-green-400 text-slate-950 w-fit px-3 py-1 font-semibold rounded-full flex items-center justify-center gap-1">
+          <p className="text-sm bg-lime-400 text-slate-950 w-fit px-3 py-1 font-semibold rounded-full flex items-center justify-center gap-1">
             <MapPinIcon weight="bold" />
             <span>-</span> {location}
           </p>

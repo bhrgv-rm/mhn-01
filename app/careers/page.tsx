@@ -56,7 +56,7 @@ const page = () => {
             See open roles <ArrowRightIcon size={20} weight="bold" />
           </button>
         </div>
-        <div className="media base-frame relative rounded-2xl bg-green-200 bg-opacity-10 p-2 base-frame--default section-media">
+        <div className="media base-frame relative rounded-2xl bg-lime-200 bg-opacity-10 p-2 base-frame--default section-media">
           <img
             src="team.png"
             alt="Careers at My Health Notion"
@@ -190,7 +190,7 @@ const page = () => {
       </section>
       <Footer />
       {copied && (
-        <div className="toast fixed z-50 bottom-4 right-4 bg-green-500 font-semibold rounded-md flex items-center gap-3 px-4 py-3 shadow-lg transition-all duration-500 animate-slide-in pointer-events-auto">
+        <div className="toast fixed z-50 bottom-4 right-4 bg-lime-500 font-semibold rounded-md flex items-center gap-3 px-4 py-3 shadow-lg transition-all duration-500 animate-slide-in pointer-events-auto">
           <InfoIcon weight="bold" size={20} />
           Email Address Copied to Clipboard
         </div>

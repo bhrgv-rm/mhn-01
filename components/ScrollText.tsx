@@ -1,38 +1,49 @@
-"use clienr";
-import React, { useEffect, useRef } from "react";
+"use client";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { SplitText, ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
+
 const ScrollText = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
+
   useEffect(() => {
-    if (!textRef.current) return;
+    const ctx = gsap.context(() => {
+      if (!textRef.current) return;
 
-    const split = new SplitText(textRef.current, { type: "words" });
+      const split = new SplitText(textRef.current, { type: "words" });
 
-    const animation = gsap.from(split.words, {
-      opacity: 0,
-      stagger: 0.1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: textRef.current,
-        start: "top 30%",
-        end: "bottom 20%",
-        pin: true,
-        scrub: true,
-      },
-    });
+      gsap.from(split.words, {
+        opacity: 0,
+        stagger: 0.1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top 30%",
+          end: "bottom 20%",
+          pin: true,
+          scrub: true,
+        },
+      });
+
+      // Store split instance for cleanup
+      return () => {
+        split.revert();
+      };
+    }, containerRef);
 
     return () => {
-      animation.kill();
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      split.revert();
+      ctx.revert();
     };
   }, []);
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-center">
+    <div
+      ref={containerRef}
+      className="w-full min-h-screen flex items-center justify-center"
+    >
       <h1
         ref={textRef}
         className="md:w-[60%] w-[90%] h-fit mb-[50vh] tracking-tight text-center font-semibold leading-tighter md:text-4xl text-xl"

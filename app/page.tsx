@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { SplitText, ScrollTrigger, ScrollSmoother } from "gsap/all";
 import Hero from "@/components/Hero";
@@ -15,34 +14,22 @@ import Finale from "@/components/Finale";
 gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
 
 export default function AnimatedText() {
-  const textRef = useRef<HTMLHeadingElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    if (!textRef.current) return;
-
-    const split = new SplitText(textRef.current, { type: "words" });
-
-    const animation = gsap.from(split.words, {
-      opacity: 0.1,
-      stagger: 0.01,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: textRef.current,
-        start: "top 30%",
-        end: "bottom 20%",
-        pin: true,
-        scrub: true,
-      },
-    });
+    // Create a GSAP context scoped to this component
+    const ctx = gsap.context(() => {
+      // Any GSAP animations here will be automatically cleaned up
+    }, containerRef);
 
     return () => {
-      animation.kill();
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      split.revert();
+      // Clean up only this component's animations
+      ctx.revert();
     };
   }, []);
 
   return (
-    <>
+    <div ref={containerRef}>
       <Navbar />
       <Hero />
       <Phone />
@@ -51,6 +38,6 @@ export default function AnimatedText() {
       <Testimonials />
       <Finale />
       <Footer />
-    </>
+    </div>
   );
 }
