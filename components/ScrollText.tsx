@@ -17,14 +17,16 @@ const ScrollText = () => {
 
       gsap.from(split.words, {
         opacity: 0,
+        y: 20,
+        duration: 2,
         stagger: 0.1,
         ease: "power2.out",
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top 30%",
-          end: "bottom 20%",
+          start: "top 20%",
+          end: "bottom 0%",
           pin: true,
-          scrub: true,
+          scrub: 1,
         },
       });
 
@@ -46,19 +48,25 @@ const ScrollText = () => {
     >
       <h1
         ref={textRef}
-        className="md:w-[60%] w-[90%] h-fit mb-[50vh] tracking-tight text-center font-semibold leading-tighter md:text-4xl text-xl"
+        className="md:w-[60%] w-[90%] h-fit mb-[50vh] tracking-tight text-center font-semibold leading-tight md:text-4xl text-xl"
       >
-        At My Health Notion, we look at health through a generational lens. The
-        foods we eat, the sleep we skip, the stress we ignore are not isolated
-        habits. They are patterns that echo across time, shaping not just our
-        future, but the future of those who come after us. That is why our
-        platform is designed to do more than track numbers. It connects the dots
-        between your medical records and your lifestyle patterns to offer
-        personalized, AI-driven insights that help you stay ahead of preventable
-        illness, reduce chronic risk, and make mindful choices that ripple
-        across generations. Because when you manage your health today, you are
-        not just making life better for yourself. You are protecting the
-        possibility of a healthier tomorrow for your family, and for the future.
+        My Health Notion is designed to support you on your personal health
+        journey — with intelligent insights and thoughtful features that fit
+        seamlessly into your everyday life.
+        <br />
+        <br />
+        Every feature is built in collaboration with medical experts and
+        grounded in scientific validation, so you can trust the information
+        guiding your choices.
+        <br />
+        <br />
+        By connecting your lifestyle with your health records, My Health Notion
+        gives you a clearer view of your overall well-being — day by day, and
+        over time.
+        <br />
+        <br />
+        And with privacy at the core, your data stays yours. Always in your
+        hands. Always in your control.
       </h1>
     </div>
   );

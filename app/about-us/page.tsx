@@ -65,16 +65,16 @@ const page = () => {
             </p>
           </div>
           <img
-            src="https://myhealthnotion.vercel.app/img/faces/priyanka.svg"
+            src="/priyanka.jpg"
             width="450px"
-            className="aspect-square object-cover"
+            className="aspect-square object-cover rounded-2xl"
           />
         </section>
         <section className="flex gap-4 items-end my-4 max-w-section-default">
           <img
-            src="https://myhealthnotion.vercel.app/img/faces/vivek.svg"
+            src="/vivek.jpg"
             width="450px"
-            className="aspect-square object-cover"
+            className="aspect-square object-cover rounded-2xl"
           />
           <div className="text">
             <p>

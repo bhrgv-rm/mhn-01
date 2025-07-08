@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center justify-around gap-12">
           <Link href="/about-us">About</Link>
-          <Link href="/services">Services</Link>
+          <Link href="/features">Features</Link>
           <Link href="/blogs">Blogs</Link>
           <Link href="/ai">TARA</Link>
         </div>
