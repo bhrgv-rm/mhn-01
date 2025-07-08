@@ -5,8 +5,8 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 const Hero = () => {
   return (
-    <nav className="hero flex flex-col items-center h-screen justify-center text-center gap-2">
-      <h5 className="tara-badge flex items-center gap-4">
+    <nav className="hero flex flex-col items-center h-[80dvh] justify-center text-center gap-2">
+      <h5 className="tara-badge flex items-center md:gap-4 gap-2">
         <Pulse />
         TARA: Our Revolutionary AI Assistant
       </h5>

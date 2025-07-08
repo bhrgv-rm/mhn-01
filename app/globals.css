@@ -9,15 +9,14 @@
   outline: none;
 }
 body {
-  /* background: #f2f2f2; */
-
+  background: #f2f2f2;
   overflow-x: hidden;
-  background: url("/mesh.png") no-repeat center center;
+  /* background: url("/mesh.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
+  width: 100dvw;
+  height: 100dvh;
+  margin: 0; */
 }
 .tara-badge {
   background: #0b9344;
@@ -32,6 +31,7 @@ body {
 @media (width <= 768px) {
   .tara-badge {
     font-size: 0.5rem;
+    padding: 3px 10px;
   }
 }
 
@@ -64,6 +64,7 @@ nav.navbar {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 8px 5px -4px rgba(0, 0, 0, 0.25);
+  width: calc(100vw - 32px);
 }
 
 .cta {
@@ -177,4 +178,23 @@ footer .right section {
   span {
     font-weight: 400;
   }
+}
+
+.img-container:hover .img-inner {
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(143, 130, 130, 0.6) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.blog-preview {
+  max-width: 680px;
+}
+
+.blog-header {
+  max-width: 720px;
 }

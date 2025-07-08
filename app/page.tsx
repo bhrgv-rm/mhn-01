@@ -17,10 +17,7 @@ export default function AnimatedText() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Create a GSAP context scoped to this component
-    const ctx = gsap.context(() => {
-      // Any GSAP animations here will be automatically cleaned up
-    }, containerRef);
+    const ctx = gsap.context(() => {}, containerRef);
 
     return () => {
       // Clean up only this component's animations

@@ -23,7 +23,7 @@ const ScrollText = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top 20%",
+          start: "top 15%",
           end: "bottom 0%",
           pin: true,
           scrub: 1,

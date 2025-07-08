@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar fixed top-2 left-1/2 transform w-[90vw] max-w-[1200px] p-2 rounded-xl border bg-white shadow-md z-50`}
+      className={`navbar fixed top-2 left-1/2 transform w-full max-w-[1200px] p-2 rounded-xl border bg-white shadow-md z-50`}
     >
       <div className="flex items-center justify-between w-full">
         <h1 className="font-bold text-xl">My Health Notion</h1>
@@ -66,8 +66,8 @@ const Navbar = () => {
           <Link href="/about-us" onClick={() => setMenuOpen(false)}>
             About
           </Link>
-          <Link href="/services" onClick={() => setMenuOpen(false)}>
-            Services
+          <Link href="/features" onClick={() => setMenuOpen(false)}>
+            Features
           </Link>
           <Link href="/blogs" onClick={() => setMenuOpen(false)}>
             Blogs

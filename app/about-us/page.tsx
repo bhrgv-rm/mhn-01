@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { LinkedinLogoIcon } from "@phosphor-icons/react";
 import React from "react";
 
 const page = () => {
@@ -8,7 +9,7 @@ const page = () => {
     <>
       <Navbar />
       <section className="about-one md:mt-40 flex flex-col items-center justify-center pt-40 pb-44"></section>
-      <section className="max-w-section-default px-4 flex flex-col text-xl gap-4 pt-10 pb-20">
+      <section className="max-w-section-default px-4 flex flex-col gap-4 pt-10 pb-20">
         <h1 className="md:text-6xl text-xl text-center text-balance font-bold tracking-tighter align-center">
           No more paper files. No more confusion. Hassle free, organized health.
         </h1>
@@ -53,41 +54,89 @@ const page = () => {
           So thanks for stopping by. Stay curious. Stay kind to yourself.And hey
           — your health just found its new favorite habit.
         </p>
-        <section className="flex gap-4 items-start my-4 max-w-section-default">
-          <div className="text">
-            <p>
-              We get it. Life is busy. You're juggling work, sleep (or the lack
-              of it), mood swings, caffeine, cravings, checkups, and that thing
-              you Googled at 2 AM that made you spiral. That's exactly why we
-              built MyHealthNotion — a place to track it all, understand your
-              patterns, and start taking charge of your health, one tiny (but
-              powerful) insight at a time.
-            </p>
-          </div>
-          <img
-            src="/priyanka.jpg"
-            width="450px"
-            className="aspect-square object-cover rounded-2xl"
-          />
-        </section>
-        <section className="flex gap-4 items-end my-4 max-w-section-default">
-          <img
-            src="/vivek.jpg"
-            width="450px"
-            className="aspect-square object-cover rounded-2xl"
-          />
-          <div className="text">
-            <p>
-              We get it. Life is busy. You're juggling work, sleep (or the lack
-              of it), mood swings, caffeine, cravings, checkups, and that thing
-              you Googled at 2 AM that made you spiral. That's exactly why we
-              built MyHealthNotion — a place to track it all, understand your
-              patterns, and start taking charge of your health, one tiny (but
-              powerful) insight at a time.
-            </p>
-          </div>
-        </section>
+      </section>
 
+      <section className="flex flex-col md:flex-row max-w-section-default mx-auto px-4 py-10 gap-8">
+        <div className="flex-1">
+          <p className="mb-4">
+            Managing your health can feel overwhelming—juggling symptoms,
+            appointments, and scattered medical records makes it hard to stay in
+            control. That's why we created My Health Notion—to bring everything
+            about your health into one secure, easy-to-use space. Your medical
+            records, daily habits, and health data are all connected, giving you
+            a complete picture of your well-being in one place.
+          </p>
+          <p className="mb-4">
+            But we don't stop at just organizing your health information. Our
+            AI-powered platform helps you recognize patterns, track your
+            progress, and gain personalized insights that actually make a
+            difference. Whether it's understanding how your habits impact your
+            health, easily sharing records with your doctor, or managing your
+            family's medical history, My Health Notion makes it effortless.
+            Because staying healthy should feel simple, not stressful. Here's to
+            a healthier, happier you!
+          </p>
+          <p className="mt-6 font-semibold">Priyanka Gandhavalla</p>
+          <p className="mb-2">Founder, My Health Notion</p>
+          <p className="font-semibold">Vivek Bollam</p>
+          <p>Co-Founder, My Health Notion</p>
+        </div>
+
+        <div className="flex-1 flex flex-col md:flex-row gap-4 items-center justify-center">
+          <div className="img-container relative w-full md:w-1/2 h-full group">
+            <img
+              src="/priyanka.jpg"
+              alt="Priyanka"
+              className="object-cover rounded-xl w-full h-full"
+            />
+            <div className="img-inner absolute top-0 left-0 w-full h-full rounded-xl z-10 opacity-0 flex flex-col items-center justify-end gap-0.5 pb-2">
+              <div className="relative flex flex-col items-center justify-end gap-0.5 pb-2  ">
+                <h1 className="text-gray-200 text-lg font-semibold">
+                  Priyanka Gandhavalla
+                </h1>
+                <p className="text-gray-300 text-xs flex items-center gap-1">
+                  FOUNDER &bull;
+                  <span>
+                    <LinkedinLogoIcon size={24} color="#f5f5f5" weight="fill" />
+                  </span>
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/priyanka-gandhavalla-9aa43b114/"
+                  className="absolute top-0 left-0 w-full h-full"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div className="img-container relative w-full md:w-1/2 h-full group">
+            <img
+              src="/vivek.jpg"
+              alt="Vivek"
+              className="object-cover rounded-xl w-full h-full"
+            />
+            <div className="img-inner absolute top-0 left-0 w-full h-full rounded-xl z-10 opacity-0 flex flex-col items-center justify-end gap-0.5 pb-2">
+              <div className="relative  flex flex-col items-center justify-end gap-0.5 pb-2">
+                <h1 className="text-gray-200 text-lg font-semibold">
+                  Vivek Bollam
+                </h1>
+                <p className="text-gray-300 text-xs flex items-center gap-1">
+                  CO - FOUNDER &bull;
+                  <span>
+                    <LinkedinLogoIcon size={24} color="#f5f5f5" weight="fill" />
+                  </span>
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/vivekbollam/"
+                  target="_blank"
+                  className="absolute top-0 left-0 w-full h-full"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-section-default">
         <h1 className="font-bold text-2xl mt-16">Our Core Values</h1>
         <ol className="about-list">
           <li>
