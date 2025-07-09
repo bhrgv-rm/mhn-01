@@ -10,6 +10,7 @@ import Testimonials from "@/components/Testimonials";
 import ScrollText from "@/components/ScrollText";
 import Footer from "@/components/Footer";
 import Finale from "@/components/Finale";
+import Blogs from "@/components/Blogs";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
 
@@ -29,10 +30,11 @@ export default function AnimatedText() {
     <div ref={containerRef}>
       <Navbar />
       <Hero />
-      <Phone />
+      {/* <Phone /> */}
       <ScrollText />
       <Bento />
       <Testimonials />
+      <Blogs />
       <Finale />
       <Footer />
     </div>

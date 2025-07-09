@@ -2,87 +2,86 @@
 
 import { useState, useEffect } from "react";
 import {
-  Clock,
-  CalendarBlank,
-  ShareNetwork,
-  PaperPlaneTilt,
-  Bell,
-  ChartLine,
-  Users,
+  ChartLineIcon,
+  CloudArrowUpIcon,
+  HeartIcon,
+  StethoscopeIcon,
+  UsersThreeIcon,
+  WarningIcon,
 } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const features = [
   {
     id: 1,
-    icon: CalendarBlank,
-    title: "Connect all your calendars",
+    icon: CloudArrowUpIcon,
+    title: "Medical Record Storage",
     description:
-      "Multiple emails sync in perfectly, without you having to worry about double bookings.",
+      "Say goodbye to bulky files. MHN keeps all your health history safe, searchable, and shareable at your fingertips.",
     rightContent: {
       type: "calendar-sync",
-      image: "/placeholder.svg?height=400&width=500",
-      title: "Calendar Integration Dashboard",
+      image: "/features/1.png",
+      title: "Medical Record Storage",
     },
   },
   {
     id: 2,
-    icon: ShareNetwork,
-    title: "Share your availability",
+    icon: HeartIcon,
+    title: "AI Health Recommendations",
     description:
-      "Let clients or partners book a time slot for a meeting instantly via public link.",
+      "MHN doesn't just store your data — it reads it. Get early warnings, wellness tips, and health nudges tailored to you.",
     rightContent: {
       type: "booking-page",
-      image: "/placeholder.svg?height=400&width=500",
-      title: "Public Booking Page",
+      image: "/features/2.png",
+      title: "AI Health Recommendations",
     },
   },
   {
     id: 3,
-    icon: PaperPlaneTilt,
-    title: "Schedule meetings yourself",
+    icon: ChartLineIcon,
+    title: "Personalized Insights",
     description:
-      "Send invites directly from our pre-built calendar with a custom questionnaire pre-meeting.",
+      "Track sleep, stress, hydration, meals, exercise, and even caffeine. Understand how your daily choices shape your health.",
     rightContent: {
       type: "meeting-scheduler",
-      image: "/placeholder.svg?height=400&width=500",
-      title: "Meeting Scheduler Interface",
+      image: "/features/3.png",
+      title: "Personalized Insights",
     },
   },
   {
     id: 4,
-    icon: Bell,
-    title: "Smart notifications",
+    icon: WarningIcon,
+    title: "Emergency SOS",
     description:
-      "Get intelligent reminders and notifications that adapt to your schedule and preferences.",
+      "Built-in safety. One tap sends a help alert to your chosen contacts with your location and basic health info.",
     rightContent: {
       type: "notifications",
-      image: "/placeholder.svg?height=400&width=500",
-      title: "Notification Center",
+      image: "/features/4.png",
+      title: "Emergency SOS",
     },
   },
   {
     id: 5,
-    icon: ChartLine,
-    title: "Analytics & insights",
+    icon: UsersThreeIcon,
+    title: "Family Connect",
     description:
-      "Track your meeting patterns, productivity metrics, and optimize your scheduling workflow.",
+      "Manage your loved ones' health just like your own. Especially useful for parents, caregivers, or long-distance support.",
     rightContent: {
       type: "analytics",
-      image: "/placeholder.svg?height=400&width=500",
-      title: "Analytics Dashboard",
+      image: "/features/5.png",
+      title: "Family Connect",
     },
   },
   {
     id: 6,
-    icon: Users,
-    title: "Team collaboration",
+    icon: StethoscopeIcon,
+    title: "Doctor Connect",
     description:
-      "Coordinate with team members, share calendars, and manage group scheduling effortlessly.",
+      "No more printing or emailing health records. Share directly with your doctor for smarter, faster consultations.",
     rightContent: {
       type: "team",
-      image: "/placeholder.svg?height=400&width=500",
-      title: "Team Management",
+      image: "/features/6.png",
+      title: "Doctor Connect",
     },
   },
 ];
@@ -125,6 +124,15 @@ export default function Component() {
 
   return (
     <div className="max-w-6xl mx-auto p-4 min-h-screen mt-32">
+      <div className="flex items-center flex-col">
+        <h1 className="text-center md:text-5xl text-2xl font-bold tracking-tighter px-4 text-balance">
+          The Future of Health. All in One App.
+        </h1>{" "}
+        <p className="text-center text-balance text-gray-600 px-4 mt-1 mb-12 max-w-4xl">
+          No more switching between tools. Everything you need for your health
+          journey—thoughtfully designed into one seamless experience.
+        </p>
+      </div>
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         <div className="space-y-3 flex md:flex-col flex-row flex-wrap justify-center gap-2">
           {features.map((feature, index) => {
@@ -206,7 +214,7 @@ export default function Component() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -5 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-white rounded-3xl p-4 shadow-xl shadow-gray-100/50 border border-gray-100"
+              className="bg-white rounded-2xl p-4 shadow-xl shadow-gray-100/50 border border-gray-100"
             >
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
@@ -216,25 +224,19 @@ export default function Component() {
               </div>
 
               {/* Main Content Image */}
-              <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100">
+              <div className="overflow-hidden rounded-xl bg-gradient-to-br from-gray-50 to-gray-100">
                 <img
                   src={
                     features[activeFeature].rightContent.image ||
                     "/placeholder.svg"
                   }
                   alt={features[activeFeature].rightContent.title}
-                  className="w-full h-80 object-cover"
+                  className="w-full aspect-square object-cover"
                 />
               </div>
             </motion.div>
           </AnimatePresence>
         </div>
-      </div>
-
-      <div className="text-center mt-12">
-        <button className="cta mt-4 px-4 py-2 rounded-md bg-slate-950 text-white text-lg font-semibold shadow-lg gap-2 cursor-pointer">
-          Learn More
-        </button>
       </div>
     </div>
   );

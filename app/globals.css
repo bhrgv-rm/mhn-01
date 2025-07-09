@@ -150,6 +150,7 @@ footer .right section {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-align: start;
 }
 
 .blog-desc {
@@ -157,6 +158,7 @@ footer .right section {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-align: start;
 }
 
 @media (width <= 768px) {
@@ -197,4 +199,135 @@ footer .right section {
 
 .blog-header {
   max-width: 720px;
+}
+
+/* Readables Class (Converted from Tailwind) */
+.readables {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75; /* 28px */
+  color: #333;
+}
+
+.readables p {
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.readables h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.readables h2 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.readables h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.readables h4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.readables h5 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: bold;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.readables h6 {
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.readables ul,
+.readables ol {
+  list-style-type: disc;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  line-height: 1.25;
+}
+.readables ol {
+  list-style: decimal;
+}
+
+.readables ul li,
+.readables ol li {
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.readables blockquote {
+  border-left: 4px solid #d1d5db; /* light gray */
+  padding-left: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9fafb; /* light gray */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.readables a {
+  color: #3b82f6; /* blue-600 */
+  text-decoration: underline;
+}
+
+.readables a:hover {
+  color: #1d4ed8; /* blue-800 */
+}
+
+.readables strong {
+  font-weight: 600; /* semi-bold */
+}
+
+.readables em {
+  font-style: italic;
+}
+
+.readables table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.readables thead {
+  background-color: #f9fafb; /* light gray */
+}
+
+.readables th,
+.readables td {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db; /* light gray */
+}
+
+.readables th {
+  text-align: left;
+  font-weight: 600; /* semi-bold */
+}
+
+.readables hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-color: #d1d5db; /* light gray */
+}
+
+.phudu {
+  font-family: Phudu;
 }

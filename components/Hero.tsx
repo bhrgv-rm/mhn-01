@@ -15,7 +15,7 @@ const Hero = () => {
       </h1>
       <Link
         href="/app"
-        className="cta bg-slate-950 text-white px-6 py-3 rounded-lg mt-4 text-lg font-semibold shadow-lg flex items-center"
+        className="cta bg-slate-950 text-white px-6 py-3 rounded-lg mt-4 md:text-lg text-sm font-semibold shadow-lg flex items-center"
       >
         <span>Download App</span>
         <ArrowRightIcon size={18} weight="bold" className="inline-block ml-2" />

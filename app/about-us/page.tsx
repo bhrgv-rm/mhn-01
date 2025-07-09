@@ -137,7 +137,7 @@ const page = () => {
       </section>
 
       <section className="max-w-section-default">
-        <h1 className="font-bold text-2xl mt-16">Our Core Values</h1>
+        <h1 className="font-bold text-2xl mt-16 mb-8">Our Core Values</h1>
         <ol className="about-list">
           <li>
             Radical Transparency -

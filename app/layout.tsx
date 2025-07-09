@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Mona_Sans, Inter } from "next/font/google";
+import { Mona_Sans, Phudu } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const phudu = Phudu({
+  variable: "--font-phudu",
   subsets: ["latin"],
 });
 
@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${monaSans.className} antialiased`}>
+      <body className={`${phudu.className} ${monaSans.className} antialiased`}>
         {children}
       </body>
     </html>

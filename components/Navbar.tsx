@@ -18,10 +18,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar fixed top-2 left-1/2 transform w-full max-w-[1200px] p-2 rounded-xl border bg-white shadow-md z-50`}
+      className={`navbar fixed top-2 left-1/2 transform w-full max-w-[1200px] p-2 rounded-3xl px-4 border bg-white shadow-md z-50`}
     >
       <div className="flex items-center justify-between w-full">
-        <h1 className="font-bold text-xl">My Health Notion</h1>
+        <a href="/" className="font-bold text-xl tracking-tight">
+          My Health Notion
+        </a>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center justify-around gap-12">
@@ -36,7 +38,7 @@ const Navbar = () => {
           href="/app"
           className="hidden md:inline-block cta bg-slate-950 text-amber-50 px-4 py-2 rounded-lg"
         >
-          Get Started
+          Download App
         </Link>
 
         {/* Mobile Menu Toggle */}
@@ -78,10 +80,10 @@ const Navbar = () => {
         </div>
         <Link
           href="/app"
-          className="block cta-nav bg-slate-950 text-amber-50 px-4 py-2 rounded-lg text-center"
+          className="block cta-nav bg-slate-950 text-amber-50 px-4 py-2 rounded-3xl text-center"
           onClick={() => setMenuOpen(false)}
         >
-          Get Started
+          Download App
         </Link>
       </div>
     </nav>

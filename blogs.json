@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "how-to-learn-nextjs",
+    "title": "How to Learn Next.js",
+    "content": "Next.js is a React framework..."
+  },
+  {
+    "slug": "react-vs-vue",
+    "title": "React vs Vue",
+    "content": "Both React and Vue are..."
+  }
+]
