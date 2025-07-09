@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar fixed top-2 left-1/2 transform w-full max-w-[1200px] p-2 rounded-3xl px-4 border bg-white shadow-md z-50`}
+      className={`navbar fixed top-2 left-1/2 transform w-full max-w-[1200px] p-2 rounded-3xl border bg-white shadow-md z-50`}
     >
       <div className="flex items-center justify-between w-full">
         <a href="/" className="font-bold text-xl tracking-tight">
@@ -30,13 +30,13 @@ const Navbar = () => {
           <Link href="/about-us">About</Link>
           <Link href="/features">Features</Link>
           <Link href="/blogs">Blogs</Link>
-          <Link href="/ai">TARA</Link>
+          <Link href="/app">App</Link>
         </div>
 
         {/* Desktop CTA */}
         <Link
           href="/app"
-          className="hidden md:inline-block cta bg-slate-950 text-amber-50 px-4 py-2 rounded-lg"
+          className="hidden md:inline-block cta bg-slate-950 text-amber-50 px-4 py-2 rounded-2xl"
         >
           Download App
         </Link>
@@ -74,8 +74,8 @@ const Navbar = () => {
           <Link href="/blogs" onClick={() => setMenuOpen(false)}>
             Blogs
           </Link>
-          <Link href="/ai" onClick={() => setMenuOpen(false)}>
-            TARA
+          <Link href="/app" onClick={() => setMenuOpen(false)}>
+            App
           </Link>
         </div>
         <Link

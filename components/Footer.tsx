@@ -150,10 +150,10 @@ const Footer = () => {
               Careers
             </Link>
             <Link
-              href="/contact"
+              href="/app"
               className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
             >
-              Contact Us
+              App
             </Link>
             <Link
               href="/faqs"
