@@ -14,12 +14,18 @@ const Bento = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-7 grid-rows-7 gap-2 m-4 w-full max-w-screen-xl">
           {/* Top Left Image */}
           <div className="bg-white rounded-xl h-fit sm:h-auto sm:col-span-3 sm:row-span-2 lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:row-span-2 relative group">
-            <div className="w-full h-full bg-[#004aad] text-white rounded-xl flex flex-col items-start justify-start bg- text-8xl text-center p-8 font-bold tracking-tighter">
+            <div className="w-full h-full bg-[#004aad] text-white rounded-xl flex flex-col items-start justify-start md:text-8xl text-6xl text-center p-8 font-bold tracking-tighter">
               <h1 className="phudu">FEATURES</h1>
-              <p className="flex gap-2">
-                <span className="text-5xl tracking-tight">designed</span>
-                <span className="text-5xl tracking-tight">around</span>
-                <span className="text-5xl tracking-tight">you.</span>
+              <p className="flex flex-col">
+                <span className="md:text-4xl text-3xl tracking-tight text-start">
+                  designed
+                </span>
+                <span className="md:text-4xl text-3xl tracking-tight text-start">
+                  around
+                </span>
+                <span className="md:text-4xl text-3xl tracking-tight text-start">
+                  you.
+                </span>
               </p>
             </div>
           </div>
@@ -41,11 +47,11 @@ const Bento = () => {
           </div>
 
           <div className="bg-white rounded-xl h-fit sm:h-auto sm:col-span-3 sm:row-span-2 lg:col-start-6 lg:row-start-4 lg:col-span-2 lg:row-span-3 flex items-center justify-center">
-            <div className="w-full h-full bg-[#459858] text-white rounded-xl flex flex-col items-end justify-end bg- text-8xl text-center p-8 font-bold tracking-tighter">
+            <div className="w-full h-full bg-[#459858] text-white rounded-xl flex flex-col items-end justify-end md:text-8xl text-6xl text-center p-8 font-bold tracking-tighter">
               <h1 className="phudu">TARA,</h1>
-              <p className="text-5xl tracking-tight">Your AI</p>
-              <p className="text-5xl tracking-tight">Health</p>
-              <p className="text-5xl tracking-tight">Assistant</p>
+              <p className="md:text-4xl text-3xl tracking-tight">Your AI</p>
+              <p className="md:text-4xl text-3xl tracking-tight">Health</p>
+              <p className="md:text-4xl text-3xl tracking-tight">Assistant</p>
             </div>
           </div>
 

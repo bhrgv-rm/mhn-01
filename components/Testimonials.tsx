@@ -28,7 +28,7 @@ const EmblaCarousel = () => {
     },
     {
       text: "Living far from my elderly parents, I struggled with the challenge of managing their health care from across the globe. This app has been invaluable, allowing me to securely access their medical records and stay informed about their health in real time. It provides peace of mind, knowing I can oversee their well-being and ensure they're receiving the best care, no matter the distance between us.",
-      name: "Dr. Vijay Bathula",
+      name: "Vijay Bathula",
       image: "/faces/2.jpg",
       tag: "Engineer, New Zealand",
     },

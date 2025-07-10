@@ -71,7 +71,7 @@ const Page = () => {
         <h1 className="heading text-center text-pretty font-bold tracking-tighter">
           The Weekly Notion
         </h1>
-        <p className="text-xl mt-4 text-gray-600 text-center text-balance">
+        <p className="text-xl mt-4 text-gray-600 text-center text-balance tracking-tight">
           No hype. No pressure. Just meaningful health insights designed for
           real life and focused on calm, consistent, and conscious choices.
         </p>

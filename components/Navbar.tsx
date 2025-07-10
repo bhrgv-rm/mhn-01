@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { List, X } from "@phosphor-icons/react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +22,11 @@ const Navbar = () => {
       className={`navbar fixed top-2 left-1/2 transform w-full max-w-[1200px] p-2 rounded-3xl border bg-white shadow-md z-50`}
     >
       <div className="flex items-center justify-between w-full">
-        <a href="/" className="font-bold text-xl tracking-tight">
+        <a
+          href="/"
+          className="font-bold text-xl tracking-tight flex items-center justify-center gap-1"
+        >
+          <Image src="/logo/default.png" width={30} height={30} alt="logo" />
           My Health Notion
         </a>
 
