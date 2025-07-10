@@ -131,36 +131,48 @@ const Footer = () => {
             <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
               Quick Links
             </h2>
-            <Link
-              href="/about-us"
-              className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
-            >
-              About Us
-            </Link>
-            <Link
-              href="/blogs"
-              className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
-            >
-              Blogs
-            </Link>
-            <Link
-              href="/careers"
-              className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
-            >
-              Careers
-            </Link>
-            <Link
-              href="/app"
-              className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
-            >
-              App
-            </Link>
-            <Link
-              href="/faqs"
-              className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
-            >
-              FAQs
-            </Link>
+            <div className="flex sm:gap-12 gap-2 flex-col sm:flex-row">
+              <div className="flex flex-col gap-2">
+                <Link
+                  href="/about-us"
+                  className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
+                >
+                  About Us
+                </Link>
+                <Link
+                  href="/blogs"
+                  className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
+                >
+                  Blogs
+                </Link>
+                <Link
+                  href="/careers"
+                  className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
+                >
+                  Careers
+                </Link>
+              </div>
+              <div className="flex flex-col gap-2">
+                <Link
+                  href="/features"
+                  className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
+                >
+                  Features
+                </Link>
+                <Link
+                  href="/app"
+                  className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
+                >
+                  App
+                </Link>
+                <Link
+                  href="/faqs"
+                  className="text-sm p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit"
+                >
+                  FAQs
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">

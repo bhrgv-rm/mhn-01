@@ -62,7 +62,7 @@ const Blogs: React.FC = () => {
   return (
     <div className="text-center text-black flex md:flex-row flex-col items-start justify-between md:w-[90vw] rounded-xl md:p-16 p-4 md:mx-auto my-32">
       <div className="md:sticky md:top-32 flex flex-1 items-start flex-col bg-[#f2f2f2] pb-4">
-        <h1 className="text-2xl md:text-6xl tracking-tighter leading-tighter md:font-bold font-semibold text-start text-balance mb-4">
+        <h1 className="text-4xl md:text-6xl tracking-tighter leading-tighter md:font-bold font-semibold text-start text-balance mb-4">
           Not Just Blogs.
         </h1>
         <p className="text-gray-700 text-start text-balance mb-8">

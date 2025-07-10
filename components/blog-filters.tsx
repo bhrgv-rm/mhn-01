@@ -46,7 +46,7 @@ export default function BlogFilters({
           </h1>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex md:flex-row flex-col items-end gap-3">
           {/* Search Input */}
           <div className="relative">
             <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" />

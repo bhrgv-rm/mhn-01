@@ -47,7 +47,7 @@ const Bento = () => {
               <div className="flex items-center gap-2">
                 <CloudArrowUpIcon color="#2f2f2f" size={32} />
                 <h1 className="font-semibold tracking-tight text-[#2f2f2f] text-lg">
-                  Medical Record Storage
+                  Medical Record Storages
                 </h1>
               </div>
             </div>
@@ -80,20 +80,12 @@ const Bento = () => {
           </div>
 
           {/* Second Image */}
-          <div className="bg-white rounded-xl overflow-hidden">
-            <div className="bg-white/20 h-full w-full rounded-xl items-start absolute top-0 left-0 pl-4 pt-4 flex gap-2 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300 z-10">
-              <div className="flex items-center gap-2">
-                <WarningIcon color="#2f2f2f" size={32} />
-                <h1 className="font-semibold tracking-tight text-[#2f2f2f] text-lg">
-                  Emergency SOS
-                </h1>
-              </div>
-            </div>
+          <div className="bg-white rounded-xl relative group overflow-hidden h-64">
             <img
               src="/bento/2.png"
-              className="rounded-xl w-full h-auto"
+              className="rounded-xl w-full h-auto z-0"
               alt="Health Tracking"
-            />{" "}
+            />
           </div>
 
           {/* Family Connect */}
@@ -148,7 +140,15 @@ const Bento = () => {
           </div>
 
           {/* Right Column Image - Original position */}
-          <div className="bg-white rounded-xl h-fit sm:h-auto sm:col-span-3 sm:row-span-2 lg:col-start-6 lg:row-start-1 lg:col-span-2 lg:row-span-3 flex items-center justify-center">
+          <div className="bg-white rounded-xl h-fit sm:h-auto sm:col-span-3 sm:row-span-2 lg:col-start-6 lg:row-start-1 lg:col-span-2 lg:row-span-3 flex items-center justify-center relative group">
+            <div className="bg-white/20 h-full w-full rounded-xl items-start absolute top-0 left-0 pl-4 pt-4 flex gap-2 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300 z-10">
+              <div className="flex items-center gap-2">
+                <WarningIcon color="white" size={32} />
+                <h1 className="font-semibold tracking-tight text-white text-lg">
+                  Emergency SOS
+                </h1>
+              </div>
+            </div>
             <img src="/bento/2.png" className="rounded-xl w-full h-min" />
           </div>
 

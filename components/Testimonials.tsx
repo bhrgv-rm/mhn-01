@@ -60,7 +60,7 @@ const EmblaCarousel = () => {
 
   return (
     <>
-      <h1 className="text-center md:text-5xl text-2xl font-bold tracking-tighter px-4 text-balance">
+      <h1 className="text-center mt-12 md:text-5xl text-2xl font-bold tracking-tighter px-4 text-balance">
         A Glimpse. A Reaction.
       </h1>
       <p className="text-center text-balance text-gray-600 px-4">

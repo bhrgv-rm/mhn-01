@@ -56,7 +56,7 @@ const page = () => {
         </p>
       </section>
 
-      <section className="flex flex-col md:flex-row max-w-section-default mx-auto px-4 py-10 gap-8">
+      <section className="flex flex-col-reverse md:flex-row max-w-section-default mx-auto px-4 py-10 gap-8">
         <div className="flex-1">
           <p className="mb-4">
             Managing your health can feel overwhelming—juggling symptoms,
@@ -136,7 +136,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className="max-w-section-default">
+      <section className="max-w-section-default px-4">
         <h1 className="font-bold text-2xl mt-16 mb-8">Our Core Values</h1>
         <ol className="about-list">
           <li>

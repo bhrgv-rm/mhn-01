@@ -66,7 +66,7 @@ export default function BlogPage() {
               alt={blog.title}
               width={800}
               height={400}
-              className="rounded-xl my-6 w-full"
+              className="rounded-xl shadow-md my-6 w-full"
             />
           </header>
           <MarkdownRenderer content={blog.content} />

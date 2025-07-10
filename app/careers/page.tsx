@@ -1,15 +1,21 @@
 "use client";
+
+import React, { useRef, useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import React, { useRef, useState } from "react";
+import Footer from "@/components/Footer";
+import Job from "@/components/Job";
 import {
   ArrowRightIcon,
   CopySimpleIcon,
   InfoIcon,
 } from "@phosphor-icons/react";
-import Job from "@/components/Job";
-import Footer from "@/components/Footer";
-const page = () => {
-  const rolesRef = useRef<HTMLDivElement>(null);
+import Image from "next/image";
+
+const AvailableRoles = [];
+
+const CareersPage = () => {
+  const rolesRef = useRef<HTMLHeadingElement>(null);
+  const [copied, setCopied] = useState(false);
 
   const handleScrollToRoles = () => {
     if (rolesRef.current) {
@@ -22,13 +28,10 @@ const page = () => {
     }
   };
 
-  const [copied, setCopied] = useState(false);
-
   const handleCopy = () => {
     navigator.clipboard.writeText("careers@myhealthnotion.in").then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 3500);
-      console.log(copied);
     });
   };
 
@@ -36,11 +39,11 @@ const page = () => {
     <>
       <Navbar />
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-section-default mt-24 px-4">
-        <div className="text flex flex-col gap-2 py-6 items-start justify-center">
+        <div className="flex flex-col gap-2 py-6 items-start justify-center">
           <span className="text-sm text-gray-700">
             Careers at My Health Notion
           </span>
-          <h1 className="font-bold tracking-tighter align-center text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="font-bold tracking-tighter text-3xl md:text-4xl lg:text-5xl">
             Build the future of healthcare with us
           </h1>
           <p>
@@ -50,17 +53,19 @@ const page = () => {
             growing the GDP of the internet. You can help.
           </p>
           <button
-            className="cta mt-4 px-4 py-2 rounded-md bg-slate-950 text-white text-lg font-semibold shadow-lg flex items-center justify-center gap-2"
+            className="cta mt-4 px-4 py-2 rounded-md bg-slate-950 text-white text-lg font-semibold shadow-lg flex items-center gap-2"
             onClick={handleScrollToRoles}
           >
             See open roles <ArrowRightIcon size={20} weight="bold" />
           </button>
         </div>
-        <div className="media base-frame relative rounded-2xl bg-lime-200 bg-opacity-10 p-2 base-frame--default section-media">
-          <img
-            src="team.png"
+        <div className="relative rounded-2xl bg-lime-200 bg-opacity-10 p-2">
+          <Image
+            src="/team.png"
             alt="Careers at My Health Notion"
-            className="w-full h-auto rounded-lg"
+            width={800}
+            height={600}
+            className="rounded-lg w-full h-auto"
           />
         </div>
       </div>
@@ -146,51 +151,57 @@ const page = () => {
         </div>
       </section>
 
-      <section className="max-w-section-default  mt-16 mb-8 px-4">
+      <section className="max-w-section-default mt-16 mb-8 px-4">
         <h1
           className="text-4xl mt-4 font-bold tracking-tight text-center"
           ref={rolesRef}
         >
           Available Roles
         </h1>
-        <p className="text-balance text-center text-gray-700">
-          We are always looking for talented individuals to join our team. If
-          you are passionate about healthcare and want to make a difference,
-          mail us at{" "}
-          <span
-            className="inline-flex items-center gap-1 whitespace-nowrap cursor-pointer underline font-bold"
-            onClick={handleCopy}
-          >
-            careers@myhealthnotion.in <CopySimpleIcon weight="bold" />
-          </span>
-        </p>
-        <div className="roles flex flex-col gap-4 mt-8">
-          <Job
-            title="Software Engineer"
-            description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            location="Remote"
-            icon="marketing"
-            url="/careers/software-engineer"
-          />
-          <Job
-            title="Software Engineer"
-            description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            location="Remote"
-            icon="marketing"
-            url="/careers/software-engineer"
-          />
-          <Job
-            title="Software Engineer"
-            description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            location="Remote"
-            icon="marketing"
-            url="/careers/software-engineer"
-          />
-        </div>
+        {AvailableRoles.length > 0 ? (
+          <>
+            <p className="text-center text-gray-700">
+              We are always looking for talented individuals to join our team.
+              If you are passionate about healthcare and want to make a
+              difference, mail us at{" "}
+              <span
+                className="inline-flex items-center gap-1 cursor-pointer underline font-bold"
+                onClick={handleCopy}
+              >
+                careers@myhealthnotion.in <CopySimpleIcon weight="bold" />
+              </span>
+            </p>
+
+            <div className="roles flex flex-col gap-4 mt-8">
+              {AvailableRoles.map((role) => (
+                <Job
+                  key={role.url}
+                  title={role.title}
+                  description={role.description}
+                  location={role.location}
+                  icon={role.icon}
+                  url={role.url}
+                />
+              ))}
+            </div>
+          </>
+        ) : (
+          <div className="text-center text-gray-600 mt-12 text-lg">
+            <p>We're at capacity right now.</p>
+            <p>Thank you for your interest.</p>
+            <p>Check back soon for new opportunities.</p>
+          </div>
+        )}
       </section>
+
       <Footer />
+
       {copied && (
-        <div className="toast fixed z-50 bottom-4 right-4 bg-lime-500 font-semibold rounded-md flex items-center gap-3 px-4 py-3 shadow-lg transition-all duration-500 animate-slide-in pointer-events-auto">
+        <div
+          className="toast fixed z-50 bottom-4 right-4 bg-lime-500 font-semibold rounded-md flex items-center gap-3 px-4 py-3 shadow-lg transition-all duration-500 animate-slide-in"
+          role="status"
+          aria-live="polite"
+        >
           <InfoIcon weight="bold" size={20} />
           Email Address Copied to Clipboard
         </div>
@@ -199,4 +210,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CareersPage;
