@@ -5,7 +5,7 @@ import { ListIcon, XIcon } from "@phosphor-icons/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export default function LandingPage() {
+export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -40,10 +40,14 @@ export default function LandingPage() {
         </div>
 
         {/* Phone Mockups */}
-        <div className="flex justify-center items-end space-x-4 md:space-x-8">
-          <img src="/app/connect.png" alt="" className="scale-90" />
-          <img src="/app/emo.png" alt="" />
-          <img src="/app/wallet.png" alt="" className="scale-90" />
+        <div className="flex justify-center items-end ">
+          <img
+            src="/app/connect.png"
+            alt=""
+            className="scale-75 md:block hidden"
+          />
+          <img src="/app/wallet.png" alt="" className="" />
+          <img src="/app/emo.png" alt="" className="scale-75 md:block hidden" />
         </div>
       </main>
       <Footer />
