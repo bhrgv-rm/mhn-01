@@ -10,8 +10,9 @@ import {
   InfoIcon,
 } from "@phosphor-icons/react";
 import Image from "next/image";
+import { AvailableRoles } from "@/careers";
 
-const AvailableRoles = [];
+// const AvailableRoles = [];
 
 const CareersPage = () => {
   const rolesRef = useRef<HTMLHeadingElement>(null);
@@ -173,23 +174,32 @@ const CareersPage = () => {
             </p>
 
             <div className="roles flex flex-col gap-4 mt-8">
-              {AvailableRoles.map((role) => (
-                <Job
-                  key={role.url}
-                  title={role.title}
-                  description={role.description}
-                  location={role.location}
-                  icon={role.icon}
-                  url={role.url}
-                />
-              ))}
+              {AvailableRoles.map(
+                (role: {
+                  title: string;
+                  description: string;
+                  location: string;
+                  icon: string;
+                  url: string;
+                }) => (
+                  <Job
+                    key={role.url}
+                    title={role.title}
+                    description={role.description}
+                    location={role.location}
+                    icon={role.icon}
+                    url={role.url}
+                  />
+                )
+              )}
             </div>
           </>
         ) : (
-          <div className="text-center text-gray-600 mt-12 text-lg">
-            <p>We're at capacity right now.</p>
-            <p>Thank you for your interest.</p>
-            <p>Check back soon for new opportunities.</p>
+          <div className="text-center text-gray-700 mt-3 text-lg">
+            <p>
+              We're at capacity right now. Thank you for your interest. Check
+              back soon for new opportunities.
+            </p>
           </div>
         )}
       </section>
