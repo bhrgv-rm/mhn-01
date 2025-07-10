@@ -8,15 +8,32 @@
 *:focus {
   outline: none;
 }
+/* body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(
+      circle at 25% 30%,
+      rgba(159, 103, 241, 0.4) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+        circle at 75% 70%,
+        rgba(255, 107, 161, 0.4) 0%,
+        transparent 60%
+      )
+      no-repeat center center;
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
+  background-color: #ffffff;
+} */
 body {
-  background: #f2f2f2;
   overflow-x: hidden;
-  /* background: url("/mesh.png") no-repeat center center;
+  background: url("/mesh.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   width: 100dvw;
   height: 100dvh;
-  margin: 0; */
+  margin: 0;
 }
 .tara-badge {
   background: #0b9344;

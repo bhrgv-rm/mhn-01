@@ -39,7 +39,7 @@ export default function BlogFilters({
 
   return (
     <>
-      <div className="blog-header border-b flex flex-col gap-4 justify-between items-center w-full pb-4 pt-20 px-2 bg-[#f2f2f2] z-10">
+      <div className="blog-header border-b flex flex-col gap-4 justify-between items-center w-full pb-4 pt-20 px-2 z-10">
         <div className="flex items-center gap-4 flex-1">
           <h1 className="md:text-4xl text-2xl font-bold tracking-tight">
             Latest Publications

@@ -1,15 +1,20 @@
 "use client";
-import React, { useState } from "react";
+import type React from "react";
+import { useState } from "react";
 import Image from "next/image";
-import { ArrowRightIcon } from "@phosphor-icons/react";
+import {
+  ArrowRightIcon,
+  CheckIcon,
+  CircleNotchIcon,
+  InfoIcon,
+} from "@phosphor-icons/react";
 import Link from "next/link";
-import { InfoIcon } from "@phosphor-icons/react"; // Adjust to the correct import for your InfoIcon
 
 const Footer = () => {
   const [email, setEmail] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
-  const [showToast, setShowToast] = useState<boolean>(false); // State for toast visibility
+  const [showToast, setShowToast] = useState<boolean>(false);
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -20,35 +25,56 @@ const Footer = () => {
     if (!email) return;
 
     setLoading(true);
-    const formDataString = new URLSearchParams({ email }).toString(); // This is how the email is sent to the Google Script
 
-    try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbw2G9l_Ob0SC3TRg7Uy7LaJw8mcnjKXjaW7CfE8_L1_b81JkjAIhPqa5NpkIncSSqts/exec", // Your Google Apps Script URL
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-          },
-          body: formDataString,
+    // Create FormData and convert to string exactly like your working script
+    const formData = new FormData();
+    formData.append("home-mail", email); // Changed from "email" to "home-mail"
+
+    const keyValuePairs: string[] = [];
+    for (const pair of formData.entries()) {
+      keyValuePairs.push(pair[0] + "=" + pair[1]);
+    }
+    const formDataString = keyValuePairs.join("&");
+
+    // Only proceed if email exists (like your original logic)
+    if (keyValuePairs[0].split("=")[1]) {
+      try {
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbw2G9l_Ob0SC3TRg7Uy7LaJw8mcnjKXjaW7CfE8_L1_b81JkjAIhPqa5NpkIncSSqts/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        );
+
+        // Check if the request was successful
+        if (response.ok) {
+          console.log("Email submitted successfully!");
+          localStorage.setItem("MHNEmailFormSubmitted", "true");
+          setSuccess(true);
+          setShowToast(true);
+
+          // Clear email after success and reset success state
+          setTimeout(() => {
+            setEmail("");
+            setShowToast(false);
+            setSuccess(false); // Reset success state to show arrow again
+          }, 3000);
+
+          return response;
+        } else {
+          throw new Error("Failed to submit the form.");
         }
-      );
-
-      if (response.ok) {
-        console.log("Email submitted successfully!");
-        setSuccess(true);
-        localStorage.setItem("MHNEmailFormSubmitted", "true");
-        setShowToast(true); // Show the toast on successful submission
-        setTimeout(() => setShowToast(false), 3000); // Hide toast after 3 seconds
-      } else {
-        console.error("Failed to submit the email.");
-        throw new Error("Failed to submit the email.");
+      } catch (error) {
+        console.error("Error:", error);
+        setSuccess(false);
+      } finally {
+        setLoading(false);
       }
-    } catch (error) {
-      console.error("Error:", error);
-      setSuccess(false);
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -73,7 +99,8 @@ const Footer = () => {
           >
             <input
               autoComplete="off"
-              id="footer-email"
+              id="home-mail"
+              name="home-mail"
               type="email"
               placeholder="Enter your email"
               className="border-2 border-gray-500 rounded px-4 py-2 w-full pr-10 text-sm"
@@ -88,21 +115,13 @@ const Footer = () => {
               disabled={loading}
             >
               {loading ? (
-                <div className="loader"></div> // Add your loading spinner here
+                <CircleNotchIcon
+                  size={20}
+                  weight="bold"
+                  className="animate-spin"
+                />
               ) : success ? (
-                // SVG success tick mark
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-6 h-6 text-green-500"
-                >
-                  <path d="M9 12l2 2l4 -4" />
-                </svg>
+                <CheckIcon size={20} weight="bold" />
               ) : (
                 <ArrowRightIcon size={20} weight="bold" />
               )}
@@ -199,14 +218,15 @@ const Footer = () => {
           </div>
         </nav>
       </div>
+
       <p className="text-xs text-gray-600 mt-4">
         © {new Date().getFullYear()} My Health Notion. All rights reserved.
       </p>
 
       {/* Toast notification */}
       {showToast && (
-        <div className="toast fixed z-50 bottom-4 right-4 bg-lime-500 font-semibold rounded-md flex items-center gap-3 px-4 py-3 shadow-lg transition-all duration-500 animate-slide-in pointer-events-auto">
-          <InfoIcon weight="bold" size={20} />
+        <div className="fixed z-50 bottom-4 right-4 bg-lime-500 text-white font-semibold rounded-md flex items-center gap-3 px-4 py-3 shadow-lg transition-all duration-500">
+          <InfoIcon size={20} />
           Thank you for Subscribing.
         </div>
       )}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Mona_Sans, Phudu } from "next/font/google";
 import "./globals.css";
-
+import SmoothScrollWrapper from "@/components/Lenis";
 const phudu = Phudu({
   variable: "--font-phudu",
   subsets: ["latin"],
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${phudu.className} ${monaSans.className} antialiased`}>
-        {children}
+        <SmoothScrollWrapper>{children}</SmoothScrollWrapper>
       </body>
     </html>
   );
