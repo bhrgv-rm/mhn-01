@@ -23,8 +23,8 @@ const ScrollText = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top 80%",
-          end: "bottom 0%",
+          start: "top center",
+          end: "bottom center",
           // pin: true,
           scrub: 1,
         },
@@ -48,7 +48,7 @@ const ScrollText = () => {
     >
       <h1
         ref={textRef}
-        className="md:w-[60%] w-[90%] h-fit mb-[50vh] tracking-tight text-center font-semibold leading-tight md:text-4xl text-xl"
+        className="md:w-[60%] w-[90%] h-fit tracking-tight text-center font-semibold leading-tight md:text-4xl text-xl"
       >
         My Health Notion is designed to support you on your personal health
         journey — with intelligent insights and thoughtful features that fit
