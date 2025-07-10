@@ -8,7 +8,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <section className="about-one md:mt-40 flex flex-col items-center justify-center pt-40 pb-44"></section>
+      <section className="about-one md:mt-40 flex flex-col items-center justify-center pt-40 md:pb-44 pb-20"></section>
       <section className="max-w-section-default px-4 flex flex-col gap-4 pt-10 pb-20">
         <h1 className="md:text-6xl text-xl text-center text-balance font-bold tracking-tighter align-center">
           No more paper files. No more confusion. Hassle free, organized health.
