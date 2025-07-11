@@ -34,9 +34,9 @@ const Hero = () => {
 
         <Link
           href="/app"
-          className="cta bg-slate-950 hover:bg-slate-800 text-white px-6 py-3 rounded-lg mt-4 md:text-lg text-sm font-semibold shadow-lg flex items-center transition-colors duration-200"
+          className="cta bg-slate-950 text-white px-6 py-3 rounded-lg mt-4 md:text-lg text-sm font-semibold shadow-lg flex items-center transition-colors duration-200"
         >
-          <span>Pre - Register the App</span>
+          <span>Pre-Register</span>
           <ArrowRightIcon size={18} className="inline-block ml-2" />
         </Link>
       </div>

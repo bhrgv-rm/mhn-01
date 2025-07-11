@@ -85,8 +85,8 @@ const Footer = () => {
   return (
     <footer className="text-black px-6 py-10 md:px-32 md:py-16">
       <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-24">
-        <section className="flex-1 flex flex-col gap-6">
-          <div className="relative flex items-center gap-3">
+        <section className="flex-1 flex flex-col gap-1">
+          <div className="relative flex items-center gap-3 mb-5">
             <Image src="/logo/default.png" alt="logo" width={40} height={40} />
             <p className="text-2xl font-bold tracking-tight">
               My Health Notion
@@ -94,12 +94,12 @@ const Footer = () => {
             <a href="/" className="absolute top-0 left-0 w-full h-full"></a>
           </div>
 
-          <label htmlFor="footer-email" className="sr-only">
-            Email
+          <label htmlFor="home-mail" className="text-sm text-gray-700">
+            Subscribe to our Newsletter
           </label>
           <form
             onSubmit={handleEmailSubmit}
-            className="relative w-full max-w-xs"
+            className="relative w-full max-w-xs mb-6"
           >
             <input
               autoComplete="off"
