@@ -225,7 +225,11 @@ const Footer = () => {
 
       {/* Toast notification */}
       {showToast && (
-        <div className="fixed z-50 bottom-4 right-4 bg-lime-500 text-white font-semibold rounded-md flex items-center gap-3 px-4 py-3 shadow-lg transition-all duration-500">
+        <div
+          className="toast fixed z-50 bottom-4 right-4 bg-green-400/80 font-semibold rounded-md flex items-center gap-3 px-4 py-3 shadow-lg transition-all duration-500 animate-slide-in"
+          role="status"
+          aria-live="polite"
+        >
           <InfoIcon size={20} />
           Thank you for Subscribing.
         </div>

@@ -58,6 +58,9 @@ const page = () => {
 
       <section className="flex flex-col-reverse md:flex-row max-w-section-default mx-auto px-4 py-10 gap-8">
         <div className="flex-1">
+          <h1 className="text-4xl md:text-6xl tracking-tighter leading-tighter md:font-bold font-semibold text-start text-balance mb-4">
+            Founders' Note
+          </h1>
           <p className="mb-4">
             Managing your health can feel overwhelming—juggling symptoms,
             appointments, and scattered medical records makes it hard to stay in
