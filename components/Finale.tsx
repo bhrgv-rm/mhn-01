@@ -15,7 +15,7 @@ const Finale = () => {
         href="/app"
         className="cta bg-slate-950 text-white px-6 py-3 rounded-lg md:mt-8 mt-4 text-lg font-semibold shadow-lg flex items-center"
       >
-        <span>Download App</span>
+        <span>Pre-Register the App</span>
         <ArrowRightIcon size={18} weight="bold" className="inline-block ml-2" />
       </Link>
     </div>

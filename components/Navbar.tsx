@@ -43,7 +43,7 @@ const Navbar = () => {
           href="/app"
           className="hidden md:inline-block cta bg-slate-950 text-amber-50 px-4 py-2 rounded-2xl"
         >
-          Download App
+          Pre - Register the App
         </Link>
 
         {/* Mobile Menu Toggle */}
@@ -88,7 +88,7 @@ const Navbar = () => {
           className="block cta-nav bg-slate-950 text-amber-50 px-4 py-2 rounded-3xl text-center"
           onClick={() => setMenuOpen(false)}
         >
-          Download App
+          Pre - Register the App
         </Link>
       </div>
     </nav>
