@@ -14,10 +14,12 @@ export default function App() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-20">
         <div className="text-center mb-8 flex items-center flex-col">
-          <p className="text-sm text-gray-600">We’re Almost There</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance tracking-tight leading-tighter">
+          <p className="text-sm text-gray-600">
             Pre-register to get early access and be the first to experience a
             mark in health history.{" "}
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance tracking-tight leading-tighter">
+            We're Almost There
           </h1>
 
           <button className="cta mt-8 px-4 py-2 rounded-md bg-slate-950 text-white text-lg font-semibold shadow-lg flex items-center justify-center gap-2 cursor-pointer">
