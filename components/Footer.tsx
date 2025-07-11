@@ -7,6 +7,10 @@ import {
   CheckIcon,
   CircleNotchIcon,
   InfoIcon,
+  InstagramLogoIcon,
+  MetaLogoIcon,
+  XLogoIcon,
+  YoutubeLogoIcon,
 } from "@phosphor-icons/react";
 import Link from "next/link";
 
@@ -129,17 +133,33 @@ const Footer = () => {
           </form>
 
           <div className="flex gap-4">
-            <a href="#" aria-label="Instagram">
-              {/* Instagram Icon */}
+            <a
+              href="https://www.instagram.com/myhealthnotion.ai/"
+              aria-label="Instagram"
+              target="_blank"
+            >
+              <InstagramLogoIcon size={28} />
             </a>
-            <a href="#" aria-label="Facebook">
-              {/* Facebook Icon */}
+            <a
+              href="https://www.facebook.com/people/My-Health-Notion/61565109898754/"
+              aria-label="Facebook"
+              target="_blank"
+            >
+              <MetaLogoIcon size={28} />
             </a>
-            <a href="#" aria-label="YouTube">
-              {/* YouTube Icon */}
+            <a
+              href="https://www.youtube.com/@MyHealthNotion"
+              aria-label="YouTube"
+              target="_blank"
+            >
+              <YoutubeLogoIcon size={28} />
             </a>
-            <a href="#" aria-label="X">
-              {/* X Icon */}
+            <a
+              href="https://x.com/myhealthnotion"
+              aria-label="X"
+              target="_blank"
+            >
+              <XLogoIcon size={28} />
             </a>
           </div>
         </section>
@@ -237,5 +257,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

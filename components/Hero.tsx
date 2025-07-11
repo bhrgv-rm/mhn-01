@@ -5,15 +5,23 @@ import { ArrowRightIcon } from "@phosphor-icons/react";
 
 const Hero = () => {
   return (
-    <section
-      className="hero flex flex-col items-center h-[100dvh] justify-center text-center gap-2 bg-cover bg-center bg-no-repeat relative"
-      style={{
-        backgroundImage: "url('/B2.png')",
-      }}
-    >
-      {/* Optional overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/10"></div>
+    <section className="hero relative flex flex-col items-center h-[100dvh] justify-center text-center gap-2 overflow-hidden">
+      {/* Video background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/1.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
+      {/* Optional overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/10 z-0"></div>
+
+      {/* Main content */}
       <div className="relative z-10 flex flex-col items-center gap-2">
         <h5 className="tara-badge flex items-center md:gap-4 gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-gray-800">
           <Pulse />
