@@ -28,8 +28,10 @@ const InnerBlog: React.FC<Blog & { slug: string }> = ({
         className="rounded-t-xl h-80 w-full object-cover"
       />
       <div className="flex flex-col gap-2 border-t items-start p-4 w-full">
-        <h2 className="blog-title text-xl font-bold">{title}</h2>
-        <p className="blog-desc text-gray-800">{description}</p>
+        <h2 className="blog-title md:text-xl text-md font-bold">{title}</h2>
+        <p className="blog-desc md:text-md text-sm text-gray-800">
+          {description}
+        </p>
         <p className="text-gray-600 text-xs">
           {new Date(date).toLocaleDateString("en-GB")}
         </p>

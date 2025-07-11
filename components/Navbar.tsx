@@ -35,6 +35,7 @@ const Navbar = () => {
           <Link href="/about-us">About</Link>
           <Link href="/features">Features</Link>
           <Link href="/blogs">Blogs</Link>
+          <Link href="/careers">Careers</Link>
           <Link href="/app">App</Link>
         </div>
 
@@ -78,6 +79,9 @@ const Navbar = () => {
           </Link>
           <Link href="/blogs" onClick={() => setMenuOpen(false)}>
             Blogs
+          </Link>
+          <Link href="/careers" onClick={() => setMenuOpen(false)}>
+            Careers
           </Link>
           <Link href="/app" onClick={() => setMenuOpen(false)}>
             App
