@@ -8,7 +8,7 @@ const Hero = () => {
     <section
       className="hero flex flex-col items-center h-[100dvh] justify-center text-center gap-2 bg-cover bg-center bg-no-repeat relative"
       style={{
-        backgroundImage: "url('/B1.png')",
+        backgroundImage: "url('/B2.png')",
       }}
     >
       {/* Optional overlay for better text readability */}

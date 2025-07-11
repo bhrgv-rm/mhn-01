@@ -16,7 +16,7 @@ export default function App() {
         <div className="text-center mb-8">
           <p className="text-sm text-gray-600">We’re Almost There</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance tracking-tight mb-8 leading-tighter">
-            Pre-register to get early access — and be the first to experience a
+            Pre-register to get early access and be the first to experience a
             mark in health history.{" "}
           </h1>
 
