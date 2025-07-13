@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { ListIcon, XIcon } from "@phosphor-icons/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PreRegister from "@/components/PreRegister";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,6 +56,7 @@ export default function App() {
           <img src="/app/emo.png" alt="" className="scale-75 md:block hidden" />
         </div>
       </main>
+      <PreRegister />
       <Footer />
     </div>
   );

@@ -48,10 +48,9 @@ const CareersPage = () => {
             Build the future of healthcare with us
           </h1>
           <p>
-            Stripe builds financial infrastructure that ambitious companies use
-            to launch their boldest products. Our customers range from hours-old
-            startups to complex global businesses. Collectively, they are
-            growing the GDP of the internet. You can help.
+            MyHealthNotion is building the human-centered infrastructure modern
+            healthcare needs. Together, we're not just improving workflows;
+            we're improving lives. You can help build what comes next.
           </p>
           <button
             className="cta mt-4 px-4 py-2 rounded-md bg-slate-950 text-white text-lg font-semibold shadow-lg flex items-center gap-2"
