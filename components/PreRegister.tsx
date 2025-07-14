@@ -25,7 +25,7 @@ const PreRegister = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycb.../exec",
+        "https://script.google.com/macros/s/AKfycbwijVCBFyznYQovai7TIf64J85RJyj5z9Y5L-qaQZQBxBpD3x8dPEV2B6q1QIrS4Juv/exec",
         {
           method: "POST",
           body: formData.toString(),
@@ -39,7 +39,6 @@ const PreRegister = () => {
         console.log("Success!");
         setSuccess(true);
         setShowToast(true);
-        localStorage.setItem("MHNEmailFormSubmitted", "true");
 
         setTimeout(() => {
           setEmail("");
@@ -57,8 +56,11 @@ const PreRegister = () => {
   };
 
   return (
-    <div>
-      <label htmlFor="home-mail" className="text-sm text-gray-700">
+    <div className="flex flex-col items-center justify-center gap-4">
+      <label
+        htmlFor="pre-register-mail"
+        className="text-6xl tracking-tighter font-bold"
+      >
         Subscribe to our Newsletter
       </label>
       <form
@@ -67,8 +69,8 @@ const PreRegister = () => {
       >
         <input
           autoComplete="off"
-          id="home-mail"
-          name="home-mail"
+          id="pre-register-mail"
+          name="pre-register-mail"
           type="email"
           placeholder="Enter your email"
           className="border-2 border-gray-500 rounded px-4 py-2 w-full pr-10 text-sm"

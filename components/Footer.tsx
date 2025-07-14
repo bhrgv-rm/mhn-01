@@ -58,7 +58,6 @@ const Footer = () => {
         // Check if the request was successful
         if (response.ok) {
           console.log("Email submitted successfully!");
-          localStorage.setItem("MHNEmailFormSubmitted", "true");
           setSuccess(true);
           setShowToast(true);
 
