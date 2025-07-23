@@ -80,7 +80,7 @@ const Bento = () => {
           </div>
 
           {/* Second Image */}
-          <div className="bg-white rounded-xl relative group overflow-hidden h-64">
+          <div className="bg-white rounded-xl relative group overflow-hidden">
             <img
               src="/bento/2.png"
               className="rounded-xl w-full h-auto z-0"

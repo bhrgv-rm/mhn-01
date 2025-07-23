@@ -29,12 +29,6 @@
 body {
   background: #f2f2f2;
   overflow-x: hidden;
-  /* background: url("/mesh.png") no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100dvw;
-  height: 100dvh;
-  margin: 0; */
 }
 .tara-badge {
   background: #0b9344;
@@ -55,7 +49,7 @@ body {
 
 .hero .main,
 .heading {
-  font-size: clamp(6.25rem, 2.4038rem + 5.1282vw, 5rem);
+  font-size: 12vh;
   line-height: 1;
 }
 
