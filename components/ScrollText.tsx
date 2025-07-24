@@ -44,7 +44,7 @@ const ScrollText = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full min-h-screen flex items-center justify-center"
+      className="w-full min-h-screen flex mt-24 items-center justify-center"
     >
       <h1
         ref={textRef}

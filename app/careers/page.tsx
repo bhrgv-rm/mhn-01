@@ -61,7 +61,7 @@ const CareersPage = () => {
         </div>
         <div className="relative rounded-2xl bg-lime-200 bg-opacity-10 p-2">
           <Image
-            src="/team.png"
+            src="/team.webp"
             alt="Careers at My Health Notion"
             width={800}
             height={600}

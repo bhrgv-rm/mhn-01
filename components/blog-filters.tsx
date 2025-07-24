@@ -68,11 +68,11 @@ export default function BlogFilters({
           </div>
 
           {/* Sort Dropdown */}
-          <div className="relative">
+          <div className="relative w-full">
             <select
               value={sortBy}
               onChange={(e) => onSortChange(e.target.value as SortOption)}
-              className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none cursor-pointer"
+              className="appearance-none w-full bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none cursor-pointer"
             >
               {sortOptions.map((option) => (
                 <option key={option.value} value={option.value}>

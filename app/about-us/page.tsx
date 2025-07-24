@@ -88,7 +88,7 @@ const page = () => {
         <div className="flex-1 flex flex-col md:flex-row gap-4 items-center justify-center">
           <div className="img-container relative w-full md:w-1/2 h-full group">
             <img
-              src="/priyanka.jpg"
+              src="/priyanka.webp"
               alt="Priyanka"
               className="object-cover rounded-xl w-full h-full"
             />
@@ -113,7 +113,7 @@ const page = () => {
           </div>
           <div className="img-container relative w-full md:w-1/2 h-full group">
             <img
-              src="/vivek.jpg"
+              src="/vivek.webp"
               alt="Vivek"
               className="object-cover rounded-xl w-full h-full"
             />

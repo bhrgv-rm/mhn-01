@@ -48,7 +48,7 @@ const Phone = () => {
         <div className="h-screen flex justify-center items-center">
           <div ref={imageRef}>
             <Image
-              src="/screen1.png"
+              src="/screen1.webp"
               alt="phone"
               width={600}
               height={800}

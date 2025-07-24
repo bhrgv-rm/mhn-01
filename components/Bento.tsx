@@ -35,7 +35,7 @@ const Bento = () => {
               </div>
             </div>
             <img
-              src="/bento/1.png"
+              src="/bento/1.webp"
               className="rounded-xl w-full h-auto"
               alt="Doctor Connect"
             />
@@ -52,7 +52,7 @@ const Bento = () => {
               </div>
             </div>
             <img
-              src="/bento/5.png"
+              src="/bento/5.webp"
               className="rounded-xl w-full h-auto"
               alt="Medical Records"
             />
@@ -61,7 +61,7 @@ const Bento = () => {
           {/* Change Image - Centered in mobile */}
           <div className="bg-white rounded-xl overflow-hidden flex items-center justify-center p-4">
             <img
-              src="/bento/6.png"
+              src="/bento/6.webp"
               className="rounded-xl max-w-full h-auto object-contain"
               alt="Change"
             />
@@ -82,7 +82,7 @@ const Bento = () => {
           {/* Second Image */}
           <div className="bg-white rounded-xl relative group overflow-hidden">
             <img
-              src="/bento/2.png"
+              src="/bento/2.webp"
               className="rounded-xl w-full h-auto z-0"
               alt="Health Tracking"
             />
@@ -99,7 +99,7 @@ const Bento = () => {
               </div>
             </div>
             <img
-              src="/bento/4.png"
+              src="/bento/4.webp"
               className="rounded-xl w-full h-auto"
               alt="Family Connect"
             />
@@ -136,7 +136,7 @@ const Bento = () => {
                 </h1>
               </div>
             </div>
-            <img src="/bento/1.png" className="rounded-xl w-full h-min" />
+            <img src="/bento/1.webp" className="rounded-xl w-full h-min" />
           </div>
 
           {/* Right Column Image - Original position */}
@@ -149,7 +149,7 @@ const Bento = () => {
                 </h1>
               </div>
             </div>
-            <img src="/bento/2.png" className="rounded-xl w-full h-min" />
+            <img src="/bento/2.webp" className="rounded-xl w-full h-min" />
           </div>
 
           {/* Medical Records - Original position */}
@@ -163,7 +163,7 @@ const Bento = () => {
               </div>
             </div>
             <img
-              src="/bento/5.png"
+              src="/bento/5.webp"
               alt="Wallet"
               className="rounded-xl max-w-full h-auto object-contain"
             />
@@ -172,7 +172,7 @@ const Bento = () => {
           {/* Change Image - Original position (center) */}
           <div className="bg-white rounded-xl h-fit sm:h-auto sm:col-span-3 sm:row-span-2 lg:col-start-3 lg:row-start-3 lg:col-span-3 lg:row-span-2 flex items-center justify-center">
             <img
-              src="/bento/6.png"
+              src="/bento/6.webp"
               alt="Change"
               className="rounded-xl max-w-full h-auto object-contain"
             />
@@ -198,7 +198,7 @@ const Bento = () => {
                 </h1>
               </div>
             </div>
-            <img src="/bento/4.png" className="rounded-xl w-full h-min" />
+            <img src="/bento/4.webp" className="rounded-xl w-full h-min" />
           </div>
         </div>
       </div>

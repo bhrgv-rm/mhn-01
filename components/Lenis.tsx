@@ -13,7 +13,7 @@ export default function SmoothScrollWrapper({
     if (!lenis.current) {
       lenis.current = new Lenis({
         duration: 1.2,
-        easing: (t) => t * (2 - t),
+        // easing: (t) => t * (2 - t),
       });
     }
 
