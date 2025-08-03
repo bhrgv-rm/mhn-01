@@ -20,7 +20,7 @@ const features = [
       "Say goodbye to bulky files. MHN keeps all your health history safe, searchable, and shareable at your fingertips.",
     rightContent: {
       type: "calendar-sync",
-      image: "/features/1.png",
+      image: "/features/1.webp",
       title: "Medical Record Storage",
     },
   },
@@ -32,7 +32,7 @@ const features = [
       "MHN doesn't just store your data — it reads it. Get early warnings, wellness tips, and health nudges tailored to you.",
     rightContent: {
       type: "booking-page",
-      image: "/features/2.png",
+      image: "/features/2.webp",
       title: "AI Health Recommendations",
     },
   },
@@ -44,7 +44,7 @@ const features = [
       "Track sleep, stress, hydration, meals, exercise, and even caffeine. Understand how your daily choices shape your health.",
     rightContent: {
       type: "meeting-scheduler",
-      image: "/features/3.png",
+      image: "/features/3.webp",
       title: "Personalized Insights",
     },
   },
@@ -56,7 +56,7 @@ const features = [
       "Built-in safety. One tap sends a help alert to your chosen contacts with your location and basic health info.",
     rightContent: {
       type: "notifications",
-      image: "/features/4.png",
+      image: "/features/4.webp",
       title: "Emergency SOS",
     },
   },
@@ -68,7 +68,7 @@ const features = [
       "Manage your loved ones' health just like your own. Especially useful for parents, caregivers, or long-distance support.",
     rightContent: {
       type: "analytics",
-      image: "/features/5.png",
+      image: "/features/5.webp",
       title: "Family Connect",
     },
   },
@@ -80,7 +80,7 @@ const features = [
       "No more printing or emailing health records. Share directly with your doctor for smarter, faster consultations.",
     rightContent: {
       type: "team",
-      image: "/features/6.png",
+      image: "/features/6.webp",
       title: "Doctor Connect",
     },
   },

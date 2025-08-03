@@ -31,18 +31,18 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center justify-around gap-12">
-          <Link href="/about-us">About</Link>
-          <Link href="/features">Features</Link>
-          <Link href="/blogs">Blogs</Link>
-          <Link href="/careers">Careers</Link>
-          <Link href="/app">App</Link>
+        <div className="hidden md:flex items-center justify-around gap-8">
+          <Link href="/about-us" className="p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit">About</Link>
+          <Link href="/features" className="p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit">Features</Link>
+          <Link href="/blogs" className="p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit">Blogs</Link>
+          <Link href="/careers" className="p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit">Careers</Link>
+          <Link href="/app" className="p-1 hover:bg-gray-200 rounded-md px-3 py-1.5 w-fit">App</Link>
         </div>
 
         {/* Desktop CTA */}
         <Link
           href="/app"
-          className="hidden md:inline-block cta bg-slate-950 text-amber-50 px-4 py-2 rounded-2xl"
+          className="hidden md:inline-block cta bg-slate-950 text-white px-4 py-2 rounded-2xl"
         >
           Pre-Register
         </Link>

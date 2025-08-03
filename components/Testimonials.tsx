@@ -23,37 +23,37 @@ const EmblaCarousel = () => {
     {
       text: "As a doctor, I've often faced challenges with patients arriving without their previous health records, making it difficult to provide comprehensive care. This platform has been a game-changer for me. It allows me to access patients' complete medical histories quickly and securely, right from my desk. The ease of finding and reviewing health records has significantly streamlined my practice and improved patient care. It's truly made my job easier and more efficient.",
       name: "Dr. PVV Raju",
-      image: "/faces/1.jpg",
+      image: "/faces/1.webp",
       tag: "Medical Professional, Karnataka",
     },
     {
       text: "Living far from my elderly parents, I struggled with the challenge of managing their health care from across the globe. This app has been invaluable, allowing me to securely access their medical records and stay informed about their health in real time. It provides peace of mind, knowing I can oversee their well-being and ensure they're receiving the best care, no matter the distance between us.",
       name: "Vijay Bathula",
-      image: "/faces/2.jpg",
+      image: "/faces/2.webp",
       tag: "Engineer, New Zealand",
     },
     {
       text: "Working abroad, I was often anxious about managing my parents' health care from such a distance. This app has made all the difference. It enables me to easily access their medical records and keep track of their health status, no matter where I am. It's incredibly reassuring to have the ability to oversee their care and ensure they're getting the support they need, even from halfway around the world.",
       name: "Sagun Soni",
-      image: "/faces/3.jpg",
+      image: "/faces/3.webp",
       tag: "E-Com Professional, Germany",
     },
     {
       text: "As a wellness counselor and health enthusiast, I am thrilled with this platform's ability to merge cutting-edge AI technology with personal wellness. The personalised insights and secure access to my medical records make managing my health both easy and effective. It's empowering to have such innovative tools at my fingertips, helping me make informed decisions and stay on top of my well-being. This platform is a fantastic resource for anyone passionate about taking charge of their health.",
       name: "Rashmi T Duseja",
-      image: "/faces/4.jpg",
+      image: "/faces/4.webp",
       tag: "Wellness Counselor, Dehradun",
     },
     {
       text: "As a dental surgeon, I am truly impressed by the innovative approach of this platform. Their seamless integration of advanced AI with a user-friendly interface provides exceptional personalised health insights and secure record management. This technology not only enhances the way we manage patient information but also empowers patients with tailored recommendations for better health outcomes. It's a game-changer for modern healthcare, offering both precision and convenience for a healthier future.",
       name: "Dr. Meghana",
-      image: "/faces/5.jpg",
+      image: "/faces/5.webp",
       tag: "Dental Sugeon, Tamil Nadu",
     },
     {
       text: "As a busy IT professional, managing my health can be challenging with my hectic schedule. This platform has been a lifesaver. The seamless access to my medical records and personalised health insights saves me time and keeps me informed about my well-being. The convenience of having everything in one place allows me to focus on my work without worrying about my health management. It's a fantastic tool for anyone with a demanding lifestyle.",
       name: "Harsha Jonnalagadda",
-      image: "/faces/6.jpg",
+      image: "/faces/6.webp",
       tag: "IT Professional, USA",
     },
   ];

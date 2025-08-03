@@ -127,7 +127,7 @@ export default function App() {
             htmlFor="pre-register-mail"
             className="text-6xl tracking-tighter font-bold"
           >
-            Subscribe to our Newsletter
+            Be the First to Experience Our App
           </label>
           <form
             ref={inputRef}

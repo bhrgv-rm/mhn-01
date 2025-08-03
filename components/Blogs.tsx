@@ -74,7 +74,7 @@ const Blogs: React.FC = () => {
         </p>
         <Link
           href="/blogs"
-          className="cta bg-slate-950 text-amber-50 px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors flex items-center justify-center gap-2"
+          className="cta bg-slate-950 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors flex items-center justify-center gap-2"
         >
           Explore all Blogs
           <ArrowRightIcon />
