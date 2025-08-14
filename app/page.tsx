@@ -11,32 +11,36 @@ import ScrollText from "@/components/ScrollText";
 import Footer from "@/components/Footer";
 import Finale from "@/components/Finale";
 import Blogs from "@/components/Blogs";
+import PhoneTwo from "@/components/PhoneTwo";
+import CookieBanner from "@/components/CookieBanner";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
 
 export default function AnimatedText() {
-  const containerRef = useRef<HTMLDivElement>(null);
+	const containerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {}, containerRef);
+	useEffect(() => {
+		const ctx = gsap.context(() => {}, containerRef);
 
-    return () => {
-      // Clean up only this component's animations
-      ctx.revert();
-    };
-  }, []);
+		return () => {
+			// Clean up only this component's animations
+			ctx.revert();
+		};
+	}, []);
 
-  return (
-    <div ref={containerRef}>
-      <Navbar />
-      <Hero />
-      {/* <Phone /> */}
-      <ScrollText />
-      <Bento />
-      <Testimonials />
-      <Blogs />
-      <Finale />
-      <Footer />
-    </div>
-  );
+	return (
+		<div ref={containerRef}>
+			<CookieBanner />
+			<Navbar />
+			<Hero />
+			{/* <Phone /> */}
+			<PhoneTwo />
+			<ScrollText />
+			<Bento />
+			<Testimonials />
+			<Blogs />
+			<Finale />
+			<Footer />
+		</div>
+	);
 }
