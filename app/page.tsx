@@ -33,7 +33,7 @@ export default function AnimatedText() {
 			<CookieBanner />
 			<Navbar />
 			<Hero />
-			{/* <Phone /> */}
+			<Phone />
 			<PhoneTwo />
 			<ScrollText />
 			<Bento />
