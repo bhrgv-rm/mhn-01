@@ -1,0 +1,14 @@
+{
+	"name": "My Health Notion",
+	"short_name": "MHN",
+	"description": "Health Decisions Made Smarter - For You and the Ones that Follow.",
+	"start_url": "/",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "/favicon.ico",
+			"sizes": "any",
+			"type": "image/x-icon"
+		}
+	]
+}
