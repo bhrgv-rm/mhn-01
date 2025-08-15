@@ -2,4 +2,4 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap: https://www/myhealthnotion.ai/sitemap.xml
+Sitemap: https://mhn-01.vercel.app/sitemap.xml

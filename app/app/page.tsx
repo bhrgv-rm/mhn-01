@@ -100,9 +100,17 @@ export default function App() {
 
 				{/* Phone Mockups */}
 				<div className="flex justify-center items-end ">
-					<img src="/app/connect.png" alt="" className="scale-75 lg:block hidden w-fit -mr-[15%]" />
-					<img src="/app/wallet.png" alt="" className="w-fit z-10" />
-					<img src="/app/emo.png" alt="" className="scale-75 lg:block hidden w-fit -ml-[15%]" />
+					<img
+						src="/app/connect.png"
+						alt="Family Connect"
+						className="scale-75 lg:block hidden w-fit -mr-[15%]"
+					/>
+					<img src="/app/wallet.png" alt="Health Wallet" className="w-fit z-10" />
+					<img
+						src="/app/emo.png"
+						alt="Emergency SOS"
+						className="scale-75 lg:block hidden w-fit -ml-[15%]"
+					/>
 				</div>
 				<div className="flex flex-col items-center justify-center gap-4 my-16">
 					<label htmlFor="pre-register-mail" className="text-6xl tracking-tighter font-bold">

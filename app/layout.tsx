@@ -18,9 +18,31 @@ const monaSans = Mona_Sans({
 
 export const metadata: Metadata = {
 	title: "My Health Notion",
-	description: "Health Decisions Made Smarter - For You and the Ones that Follow.",
-	generator: "v0.app",
-	metadataBase: new URL("https://mhn-01.vercel.app/"), // Replace with your actual domain
+	description: "AI health assistant with doctor connect & secure records.",
+	keywords: [
+		"AI health assistant",
+		" health management app",
+		"medical records app",
+		"healthcare platform",
+		"indian healthcare",
+		" personal health tracker",
+		"doctor connect",
+		"secure health records",
+		"healthcare app",
+		"health assistant",
+		"medical assistant",
+		"health management system",
+		"digital health records",
+		"healthcare technology",
+		"patient management app",
+		"healthcare innovation",
+		"AI-powered personal health assistant for families in India",
+		"secure medical record storage app with doctor consultations",
+		"all-in-one health tracker & emergency SOS app",
+		"preventive health and lifestyle tracking app",
+		"voice-enabled AI health assistant India",
+	],
+	metadataBase: new URL("https://mhn-01.vercel.app/"),
 	icons: {
 		icon: "/logo/default.png",
 		apple: "/apple-touch-icon.png",
@@ -28,8 +50,8 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: "My Health Notion",
-		description: "Health Decisions Made Smarter - For You and the Ones that Follow.",
-		url: "https://mhn-01.vercel.app/", // Replace with your actual domain
+		description: "AI health assistant with doctor connect & secure records.",
+		url: "https://mhn-01.vercel.app/",
 		siteName: "My Health Notion",
 		images: [
 			{
@@ -45,7 +67,7 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "My Health Notion",
-		description: "Health Decisions Made Smarter - For You and the Ones that Follow.",
+		description: "AI health assistant with doctor connect & secure records.",
 		images: ["/twitter-image.png"],
 	},
 };

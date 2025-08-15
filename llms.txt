@@ -1,0 +1,103 @@
+# My Health Notion
+
+> AI Health Assistant & Medical Records
+
+AI health assistant with doctor connect & secure records.
+
+My Health Notion is an all-in-one AI-driven health platform designed for Indian users. It centralizes your medical data—prescriptions, test reports, and lifestyle logs—in one secure app while offering a personal AI health assistant (TARA). The platform’s tagline emphasizes that “managing your health should be seamless, secure, and smart”, reflecting its focus on convenience and privacy. Key features include Doctor Connect (instant audio/video consultations with physicians), Emergency SOS alerts, and Family Connect for shared health management. Users can receive AI-generated health insights and reminders based on their records and daily habits. By combining preventive care with data-driven guidance, My Health Notion helps users stay on top of wellness. The app is fully mobile-optimized and implements natural, voice-friendly content (targeting conversational queries). All pages will be schema-marked (e.g. SoftwareApplication, FAQ) and optimized for Core Web Vitals (fast load, low layout shift), ensuring top performance in mobile search. In summary, My Health Notion offers a smart, secure digital health coach and record-keeper that outshines single-feature apps by unifying AI assistance, doctor access, and emergency support in one user-friendly interface.
+
+
+## Main Navigation Links
+
+- [Home](/) - App overview and services
+- [About Us](/about-us) - Mission, approach, and team philosophy 
+- [Features](/features) - Detailed list of features that comes with the app
+- [Careers](/careers) - List of careers and job openings at My Health Notion
+- [App](/app) - Links to pre-register or to download the app
+
+
+
+## Features
+
+- Medical Record Storage - Say goodbye to bulky files. MHN keeps all your health history safe, searchable, and shareable at your fingertips.
+- AI Health Recommendations - MHN doesn't just store your data — it reads it. Get early warnings, wellness tips, and health nudges tailored to you.
+- Personalized Insights - Track sleep, stress, hydration, meals, exercise, and even caffeine. Understand how your daily choices shape your health.
+- Emergency SOS - Built-in safety. One tap sends a help alert to your chosen contacts with your location and basic health info.
+- Family Connect - Manage your loved ones' health just like your own. Especially useful for parents, caregivers, or long-distance support.
+- Doctor Connect - No more printing or emailing health records. Share directly with your doctor for smarter, faster consultations.
+
+
+## About
+
+- Radical Transparency - We believe in clear, honest communication—with our users, partners, and ourselves. Your health deserves nothing less than truth you can trust.
+- Health Beyond Self - Every choice we make today—every meal, every step, every moment of care—ripples forward into the lives of those we love and the generations yet to come.
+- Radical Simplicity - Healthcare is already complex. We make it feel effortless—designing experiences so intuitive, you barely notice the technology behind them.
+- Science with Soul - We marry cutting-edge science and data with timeless human wisdom. Because true health is both evidence-led and deeply personal.
+- Stewardship for the Future - We're not just building for now. We're building for your children, your grandchildren, and communities we may never meet.
+- Integrity at Every Step - From how we handle your data to how we guide your care—we operate with uncompromising honesty and respect.
+
+
+## Blogs
+
+- Rice Unraveled - Rice is a staple in Indian households, central to daily meals and rich in cultural significance. White, brown, and red rice are the most commonly consumed varieties, each offering distinct flavors and nutritional benefits. This article explores the impact of each rice type on insulin levels, digestion, immunity, and overall health, while providing a cheat sheet for balanced consumption to help you make healthier choices in your diet.
+- Maintaining Vitamin D & the Impact of Modern Lifestyles - Vitamin D is an essential nutrient that plays a pivotal role in maintaining healthy bones, regulating immune function, and supporting overall well-being. Despite its importance, vitamin D deficiency is becoming more prevalent due to modern lifestyles that limit sun exposure, dietary habits, and other factors. This article explores how these modern habits contribute to vitamin D deficiency and offers practical tips to maintain optimal levels.
+- Bone Health Blueprint - Our bones form the literal backbone of our bodies, supporting every move we make. Yet, as we age, their strength can decline, leading to conditions like osteoporosis, which weakens bones and increases fracture risk. In this article, we'll delve into what osteoporosis is, who it affects, and how you can fortify your bones through preventive measures, tests, diet, and exercise.
+- Decoding Metabolism - Metabolism is frequently described as the unseen driver of our energy, weight management, and overall health. Despite its fundamental importance, misconceptions about metabolism abound. To clear up the confusion, let's delve into the science of metabolism and uncover how a better understanding of this process can empower you to make smarter health choices.
+- Gut Health Magic - Gut health has become a buzzword in the wellness world, but its significance goes far beyond just a trend. Often referred to as the "second brain," your gut plays a critical role in not just digestion, but in overall health, impacting everything from mood and energy levels to immune function and disease prevention. In today's fast-paced world, maintaining a healthy gut is more important—and more challenging—than ever.
+- The Importance of Sleep for Health - In our fast-paced world, sleep frequently gets sidelined by our busy schedules and relentless demands. However, it is just as essential to our health as nutrition and exercise. Sleep is not merely a pause from our daily activities; it is a vital pillar of overall well-being, deeply impacting both our physical and mental health.
+
+
+## Sitemap
+
+https://www.myhealthnotion.ai/sitemap.xml
+
+
+## Bot Access Policy
+
+My Health Notion’s preferences for AI/LLM access, training, and content usage:
+
+- **User-agent: gptbot**  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: claudebot**  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: google-extended**  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: perplexitybot**  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: neevabot**  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: youbot**  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: ccbot** (Common Crawl)  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: duckduckbot** (DuckDuckGo AI)  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: yandexbot**  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+- **User-agent: archive.org_bot**  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
+
+### Default Rule for Unspecified or Future Bots
+
+- **User‑agent: \***  
+  Allow‑Training: yes  
+  Allow‑Retrieval: yes  
