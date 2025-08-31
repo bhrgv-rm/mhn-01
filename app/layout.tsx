@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 		"medical records app",
 		"healthcare platform",
 		"indian healthcare",
-		" personal health tracker",
+		"personal health tracker",
 		"doctor connect",
 		"secure health records",
 		"healthcare app",
